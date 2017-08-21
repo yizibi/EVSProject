@@ -1,0 +1,23 @@
+//
+//  English_PrefixHeader.pch
+//  英语短视频
+//
+//  Created by hspcadmin on 2017/8/21.
+//  Copyright © 2017年 英语短视频. All rights reserved.
+//
+
+#ifndef English_PrefixHeader_pch
+#define English_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AppDelegate.h"
+#import "EVS_Macro.h"
+
+
+//第三方库
+#import <Masonry.h>
+
+
+
+#endif /* English_PrefixHeader_pch */
