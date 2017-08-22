@@ -7,6 +7,7 @@
 //
 
 #import "EVSHomeController.h"
+#import "EVSMineController.h"
 
 @interface EVSHomeController ()
 
@@ -19,12 +20,29 @@
     
     [self setUpNavBar];
     
+    
+    
 }
 
 - (void)setUpNavBar {
     self.titleText = @"主页";
+    //左边的头像
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setTitle:@"头像" forState:UIControlStateNormal];
+    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    leftButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    [leftButton addTarget:self action:@selector(homeControllerLeftButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self setNavBarLeftView:leftButton withFrame:CGRectMake(10, 0, 44, 44)];
     
 }
+
+#pragma mark - leftActions
+- (void)homeControllerLeftButtonClick {
+    LXLogFunc;
+    EVSMineController *mineVc = [EVSMineController evs_mineVc];
+    [self.navigationController pushViewController:mineVc animated:YES];
+}
+
 
 
 

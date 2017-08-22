@@ -20,6 +20,9 @@
 #define BOUNDS_HEIGHT(v) (v).bounds.size.height
 #define FRAME_WIDTH(v)   (v).frame.size.width
 #define FRAME_HEIGHT(v)  (v).frame.size.height
+#define X_WidthScale SCREEN_WIDTH/375
+#define Y_HeightScale SCREEN_HEIGHT/667
+
 //偏好存储
 #define EVS_PLIST            [NSUserDefaults standardUserDefaults]
 //通知
@@ -48,7 +51,8 @@
 #define LXColor(r, g, b) kUIColor((r), (g), (b), 255)
 #define LXUIRandomColor LXColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 #define LXrayColor(v) LXColor((v), (v), (v))
-
+#define LXTableSeprateLineColor kUIColorFromRGB(0xe5e5e5)
+#define LXCommongrayColor  kUIColorFromRGB(0xacacac)
 #define LXNavgationTitleColor  kUIColorFromRGB(0x19181e)
 #define LXNavgationTitleFont [UIFont systemFontOfSize:17]
 

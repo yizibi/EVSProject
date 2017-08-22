@@ -18,6 +18,8 @@
 		300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */; };
 		300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */; };
 		3B0A0C8D2DE927E4808FE470 /* libPods-英语短视频.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AFB97D9427A6EE41B3EE99 /* libPods-英语短视频.a */; };
+		3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61B1F4C652F0073CBEA /* EVSMineController.m */; };
+		3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,10 @@
 		300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHomeController.m; sourceTree = "<group>"; };
 		300CAEDD1F4AA9AD00BB967E /* LX_CustomNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LX_CustomNavBarView.h; sourceTree = "<group>"; };
 		300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LX_CustomNavBarView.m; sourceTree = "<group>"; };
+		3C49A61A1F4C652F0073CBEA /* EVSMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMineController.h; sourceTree = "<group>"; };
+		3C49A61B1F4C652F0073CBEA /* EVSMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineController.m; sourceTree = "<group>"; };
+		3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVS_MineCell.h; sourceTree = "<group>"; };
+		3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVS_MineCell.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,10 +254,10 @@
 		300CAEB31F4A8EF700BB967E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				300CAEB81F4A8EF700BB967E /* Mine(我的) */,
+				300CAEB41F4A8EF700BB967E /* Home(主页) */,
 				300CAECE1F4AA4FC00BB967E /* Service(服务接口) */,
 				300CAEBD1F4AA4F100BB967E /* Other(其他) */,
-				300CAEB41F4A8EF700BB967E /* Home(主页) */,
-				300CAEB81F4A8EF700BB967E /* Mine(我的) */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -302,6 +308,8 @@
 		300CAEB91F4A8EF700BB967E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C49A61A1F4C652F0073CBEA /* EVSMineController.h */,
+				3C49A61B1F4C652F0073CBEA /* EVSMineController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -316,6 +324,8 @@
 		300CAEBB1F4A8EF700BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */,
+				3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -761,12 +771,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
+				3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
