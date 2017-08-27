@@ -21,6 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [UIColor whiteColor];
         [self setupSubviews];
     }
     return self;
@@ -284,6 +285,9 @@
     self.titleView.hidden = _hiddenTitleView;
 }
 
-
+- (void)setHiddenBottomLine:(BOOL)hiddenBottomLine{
+    _hiddenBottomLine = hiddenBottomLine;
+    self.bottomLine.hidden = _hiddenBottomLine;
+}
 
 @end

@@ -28,6 +28,7 @@
 @property (nonatomic, assign) BOOL hiddenLeftView;
 @property (nonatomic, assign) BOOL hiddenRightView;
 @property (nonatomic, assign) BOOL hiddenTitleView;
+@property (nonatomic, assign) BOOL hiddenBottomLine;
 
 + (instancetype)customNavBarView;
 

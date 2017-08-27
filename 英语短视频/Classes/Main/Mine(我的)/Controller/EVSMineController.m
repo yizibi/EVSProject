@@ -10,15 +10,26 @@
 #import "EVSMineController.h"
 #import "EVS_MineCell.h"
 
+#import "EVSMineHeadView.h"
+#import "EVSUserLoginView.h"
+#import "EVSUserAlreadyLoginView.h"
+#import "EVSMineHeadDelegate.h"
+
 
 static NSString * const mineCellID = @"mineCellID";
 
-@interface EVSMineController ()<UITableViewDelegate,UITableViewDataSource>
+@interface EVSMineController ()<UITableViewDelegate,UITableViewDataSource,EVSMineHeadDelegate>
+
+
+/** headerView */
+@property (nonatomic, strong) EVSMineHeadView *headView;
 
 /** backButton */
 @property (nonatomic, strong) UIButton  *backButton;
 /** seting */
 @property (nonatomic, strong) UIButton *setingButton;
+/** view */
+@property (nonatomic, strong) UIView *navBar;
 
 /** tableView */
 @property (nonatomic, strong) UITableView *mineTableView;
@@ -56,7 +67,14 @@ static NSString * const mineCellID = @"mineCellID";
 }
 
 
+#pragma mark - EVSMineHeadDelegate
+- (void)mineLoginHeadButtonClick:(UIButton *)button{
+    LXLogFunc;
+}
 
+- (void)mineHeadViewDidTouched:(UIView *)headView{
+    LXLogFunc;
+}
 
 
 #pragma mark - tableViewDelegate
@@ -117,6 +135,7 @@ static NSString * const mineCellID = @"mineCellID";
     //需要自定义
     [self setHiddenNavBar:YES];
     
+    [self.view addSubview:self.navBar];
     [self.view addSubview:self.backButton];
     [self.view addSubview:self.setingButton];
 
@@ -156,18 +175,27 @@ static NSString * const mineCellID = @"mineCellID";
     return _setingButton;
 }
 
+- (UIView *)navBar{
+    if (!_navBar) {
+        _navBar = [[UIView alloc] init];
+        _navBar.backgroundColor = [UIColor whiteColor];
+        _navBar.frame = CGRectMake(0, 0, SCREEN_WIDTH, 64);
+    }
+    return _navBar;
+}
 
 - (UITableView *)mineTableView
 {
     if (!_mineTableView) {
         _mineTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-40*Y_HeightScale) style:UITableViewStyleGrouped];
-//        _headView = [[LX_MineHeaderView alloc] init];
-//        CGFloat height = [_headView mineHeaderViewHeight];
-//        _headView.frame = CGRectMake(0, 0, SCREEN_WIDTH, height);
-//        self.headView = _headView;
+        _headView = [[EVSMineHeadView alloc] init];
+        _headView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 100);
+        _headView.loginView.delegate = self;
+        _headView.alreadyView.delegate = self;
+        self.headView = _headView;
 //
-//        _mineTableView.tableHeaderView = self.headView;
-//        
+        _mineTableView.tableHeaderView = self.headView;
+//
         _mineTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
         _mineTableView.separatorColor = LXTableSeprateLineColor;
 //        _mineTableView.separatorInset = UIEdgeInsetsMake(0, 20, 0, 0);

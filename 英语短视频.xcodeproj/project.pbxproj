@@ -20,6 +20,17 @@
 		3B0A0C8D2DE927E4808FE470 /* libPods-英语短视频.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AFB97D9427A6EE41B3EE99 /* libPods-英语短视频.a */; };
 		3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61B1F4C652F0073CBEA /* EVSMineController.m */; };
 		3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */; };
+		3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94040B1F52A3B7008E523F /* EVSMineHeadView.m */; };
+		3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94040E1F52A56B008E523F /* EVSUserLoginView.m */; };
+		3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404111F52A582008E523F /* EVSUserAlreadyLoginView.m */; };
+		3C9404151F52A62E008E523F /* EVSConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404141F52A62E008E523F /* EVSConst.m */; };
+		3C9404181F52A66F008E523F /* UIView+LXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404171F52A66F008E523F /* UIView+LXFrame.m */; };
+		3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94041A1F52A681008E523F /* UIImage+LX_Extend.m */; };
+		3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94041D1F52A6A3008E523F /* MBProgressHUD+LX_Extention.m */; };
+		3C9404211F52A6A3008E523F /* UIViewController+LX_HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94041F1F52A6A3008E523F /* UIViewController+LX_HUD.m */; };
+		3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404241F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m */; };
+		3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404261F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m */; };
+		3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +85,30 @@
 		3C49A61B1F4C652F0073CBEA /* EVSMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineController.m; sourceTree = "<group>"; };
 		3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVS_MineCell.h; sourceTree = "<group>"; };
 		3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVS_MineCell.m; sourceTree = "<group>"; };
+		3C94040A1F52A3B7008E523F /* EVSMineHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMineHeadView.h; sourceTree = "<group>"; };
+		3C94040B1F52A3B7008E523F /* EVSMineHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineHeadView.m; sourceTree = "<group>"; };
+		3C94040D1F52A56B008E523F /* EVSUserLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserLoginView.h; sourceTree = "<group>"; };
+		3C94040E1F52A56B008E523F /* EVSUserLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserLoginView.m; sourceTree = "<group>"; };
+		3C9404101F52A582008E523F /* EVSUserAlreadyLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserAlreadyLoginView.h; sourceTree = "<group>"; };
+		3C9404111F52A582008E523F /* EVSUserAlreadyLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserAlreadyLoginView.m; sourceTree = "<group>"; };
+		3C9404131F52A62E008E523F /* EVSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSConst.h; sourceTree = "<group>"; };
+		3C9404141F52A62E008E523F /* EVSConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSConst.m; sourceTree = "<group>"; };
+		3C9404161F52A66F008E523F /* UIView+LXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXFrame.h"; sourceTree = "<group>"; };
+		3C9404171F52A66F008E523F /* UIView+LXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXFrame.m"; sourceTree = "<group>"; };
+		3C9404191F52A681008E523F /* UIImage+LX_Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LX_Extend.h"; sourceTree = "<group>"; };
+		3C94041A1F52A681008E523F /* UIImage+LX_Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LX_Extend.m"; sourceTree = "<group>"; };
+		3C94041C1F52A6A3008E523F /* MBProgressHUD+LX_Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+LX_Extention.h"; sourceTree = "<group>"; };
+		3C94041D1F52A6A3008E523F /* MBProgressHUD+LX_Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+LX_Extention.m"; sourceTree = "<group>"; };
+		3C94041E1F52A6A3008E523F /* UIViewController+LX_HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LX_HUD.h"; sourceTree = "<group>"; };
+		3C94041F1F52A6A3008E523F /* UIViewController+LX_HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LX_HUD.m"; sourceTree = "<group>"; };
+		3C9404231F52A6F5008E523F /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		3C9404241F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		3C9404251F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		3C9404261F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		3C9404271F52A6F5008E523F /* NSSet+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
+		3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
+		3C94042C1F52A897008E523F /* EVS_EnumDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVS_EnumDefines.h; sourceTree = "<group>"; };
+		3C94042D1F52AFF7008E523F /* EVSMineHeadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVSMineHeadDelegate.h; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +252,14 @@
 		300CAEAE1F4A8EF700BB967E /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				3C94041C1F52A6A3008E523F /* MBProgressHUD+LX_Extention.h */,
+				3C94041D1F52A6A3008E523F /* MBProgressHUD+LX_Extention.m */,
+				3C94041E1F52A6A3008E523F /* UIViewController+LX_HUD.h */,
+				3C94041F1F52A6A3008E523F /* UIViewController+LX_HUD.m */,
+				3C9404161F52A66F008E523F /* UIView+LXFrame.h */,
+				3C9404171F52A66F008E523F /* UIView+LXFrame.m */,
+				3C9404191F52A681008E523F /* UIImage+LX_Extend.h */,
+				3C94041A1F52A681008E523F /* UIImage+LX_Extend.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -231,6 +274,8 @@
 		300CAEB01F4A8EF700BB967E /* Const(常量) */ = {
 			isa = PBXGroup;
 			children = (
+				3C9404131F52A62E008E523F /* EVSConst.h */,
+				3C9404141F52A62E008E523F /* EVSConst.m */,
 			);
 			path = "Const(常量)";
 			sourceTree = "<group>";
@@ -240,6 +285,7 @@
 			children = (
 				300CAED81F4AA76D00BB967E /* EVS_Macro.h */,
 				300CAED91F4AA7A200BB967E /* EVS_DefineUrl.h */,
+				3C94042C1F52A897008E523F /* EVS_EnumDefines.h */,
 			);
 			path = "Macros(宏)";
 			sourceTree = "<group>";
@@ -247,6 +293,7 @@
 		300CAEB21F4A8EF700BB967E /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				3C9404221F52A6F5008E523F /* ConsoleCheseInput */,
 			);
 			path = "Tools(工具)";
 			sourceTree = "<group>";
@@ -326,6 +373,13 @@
 			children = (
 				3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */,
 				3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */,
+				3C94042D1F52AFF7008E523F /* EVSMineHeadDelegate.h */,
+				3C94040A1F52A3B7008E523F /* EVSMineHeadView.h */,
+				3C94040B1F52A3B7008E523F /* EVSMineHeadView.m */,
+				3C94040D1F52A56B008E523F /* EVSUserLoginView.h */,
+				3C94040E1F52A56B008E523F /* EVSUserLoginView.m */,
+				3C9404101F52A582008E523F /* EVSUserAlreadyLoginView.h */,
+				3C9404111F52A582008E523F /* EVSUserAlreadyLoginView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -476,6 +530,19 @@
 			children = (
 			);
 			path = "Service(服务接口)";
+			sourceTree = "<group>";
+		};
+		3C9404221F52A6F5008E523F /* ConsoleCheseInput */ = {
+			isa = PBXGroup;
+			children = (
+				3C9404231F52A6F5008E523F /* NSArray+HYBUnicodeReadable.h */,
+				3C9404241F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m */,
+				3C9404251F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.h */,
+				3C9404261F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m */,
+				3C9404271F52A6F5008E523F /* NSSet+HYBUnicodeReadable.h */,
+				3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */,
+			);
+			path = ConsoleCheseInput;
 			sourceTree = "<group>";
 		};
 		994E0B879E41887E64C83214 /* Frameworks */ = {
@@ -771,13 +838,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9404211F52A6A3008E523F /* UIViewController+LX_HUD.m in Sources */,
+				3C9404181F52A66F008E523F /* UIView+LXFrame.m in Sources */,
+				3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */,
 				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
+				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
+				3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
+				3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */,
+				3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */,
+				3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
+				3C9404151F52A62E008E523F /* EVSConst.m in Sources */,
+				3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */,
+				3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
