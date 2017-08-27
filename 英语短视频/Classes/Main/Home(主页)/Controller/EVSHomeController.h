@@ -7,7 +7,8 @@
 //
 
 #import "EVSBaseController.h"
+#import "YZDisplayViewController.h"
 
-@interface EVSHomeController : EVSBaseController
+@interface EVSHomeController : YZDisplayViewController
 
 @end

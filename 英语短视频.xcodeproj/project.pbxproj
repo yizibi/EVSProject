@@ -31,6 +31,11 @@
 		3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404241F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m */; };
 		3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404261F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m */; };
 		3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */; };
+		3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404301F5302CE008E523F /* UIView+Frame.m */; };
+		3C9404391F5302CE008E523F /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404321F5302CE008E523F /* YZDisplayTitleLabel.m */; };
+		3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404341F5302CE008E523F /* YZDisplayViewController.m */; };
+		3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404371F5302CE008E523F /* YZFlowLayout.m */; };
+		3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94043D1F530590008E523F /* EVSBaseListController.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -109,6 +114,17 @@
 		3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		3C94042C1F52A897008E523F /* EVS_EnumDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVS_EnumDefines.h; sourceTree = "<group>"; };
 		3C94042D1F52AFF7008E523F /* EVSMineHeadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVSMineHeadDelegate.h; sourceTree = "<group>"; };
+		3C94042F1F5302CE008E523F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3C9404301F5302CE008E523F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3C9404311F5302CE008E523F /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		3C9404321F5302CE008E523F /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		3C9404331F5302CE008E523F /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		3C9404341F5302CE008E523F /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		3C9404351F5302CE008E523F /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		3C9404361F5302CE008E523F /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
+		3C9404371F5302CE008E523F /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
+		3C94043C1F530590008E523F /* EVSBaseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSBaseListController.h; sourceTree = "<group>"; };
+		3C94043D1F530590008E523F /* EVSBaseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSBaseListController.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -324,6 +340,8 @@
 			children = (
 				300CAEDA1F4AA93C00BB967E /* EVSHomeController.h */,
 				300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */,
+				3C94043C1F530590008E523F /* EVSBaseListController.h */,
+				3C94043D1F530590008E523F /* EVSBaseListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,6 +416,7 @@
 		300CAEBE1F4AA4F100BB967E /* Base(基类) */ = {
 			isa = PBXGroup;
 			children = (
+				3C94042E1F5302B1008E523F /* TitleVcLib */,
 				300CAEBF1F4AA4F100BB967E /* Controller */,
 				300CAEC01F4AA4F100BB967E /* Model */,
 				300CAEC11F4AA4F100BB967E /* View */,
@@ -543,6 +562,22 @@
 				3C9404281F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m */,
 			);
 			path = ConsoleCheseInput;
+			sourceTree = "<group>";
+		};
+		3C94042E1F5302B1008E523F /* TitleVcLib */ = {
+			isa = PBXGroup;
+			children = (
+				3C94042F1F5302CE008E523F /* UIView+Frame.h */,
+				3C9404301F5302CE008E523F /* UIView+Frame.m */,
+				3C9404311F5302CE008E523F /* YZDisplayTitleLabel.h */,
+				3C9404321F5302CE008E523F /* YZDisplayTitleLabel.m */,
+				3C9404331F5302CE008E523F /* YZDisplayViewController.h */,
+				3C9404341F5302CE008E523F /* YZDisplayViewController.m */,
+				3C9404351F5302CE008E523F /* YZDisplayViewHeader.h */,
+				3C9404361F5302CE008E523F /* YZFlowLayout.h */,
+				3C9404371F5302CE008E523F /* YZFlowLayout.m */,
+			);
+			path = TitleVcLib;
 			sourceTree = "<group>";
 		};
 		994E0B879E41887E64C83214 /* Frameworks */ = {
@@ -845,17 +880,22 @@
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
+				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
+				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
 				3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
 				3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */,
 				3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */,
+				3C9404391F5302CE008E523F /* YZDisplayTitleLabel.m in Sources */,
 				3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
 				3C9404151F52A62E008E523F /* EVSConst.m in Sources */,
+				3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */,
 				3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */,
 				3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */,
 				3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
