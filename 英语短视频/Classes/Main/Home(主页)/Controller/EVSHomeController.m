@@ -24,6 +24,8 @@
 - (void)setUpNavBar {
     self.titleText = @"主页";
     
+    self.view.backgroundColor = [UIColor grayColor];
+    
 }
 
 
