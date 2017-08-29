@@ -24,7 +24,6 @@
     
 
     //获取分类
-//    self.isfullScreen = YES;
     [self loadTitleArrayFromService];
     
     
@@ -58,7 +57,7 @@
     
     [self.childViewControllers makeObjectsPerformSelector:@selector(removeFromParentViewController)];
     
-//    CGFloat contentY = 20;
+//    CGFloat contentY = 0;
     
     EVSBaseListController *gzVC = [[EVSBaseListController alloc] init];
     gzVC.title = @"关注";
@@ -76,9 +75,9 @@
     
 //    [self setUpContentViewFrame:^(UIView *contentView) {
 //        
-//        CGFloat contentX = 60;
+//        CGFloat contentX = 44;
 //        CGFloat contentH = SCREEN_HEIGHT - contentY;
-//        contentView.frame = CGRectMake(contentX, contentY, SCREEN_WIDTH-120, contentH);
+//        contentView.frame = CGRectMake(contentX, contentY, SCREEN_WIDTH-88, contentH);
 //        
 //    }];
     
@@ -121,9 +120,7 @@
     
     [self.view addSubview:rightButton];
     
-    
-    self.view.backgroundColor = [UIColor grayColor];
-    
+        
 }
 
 

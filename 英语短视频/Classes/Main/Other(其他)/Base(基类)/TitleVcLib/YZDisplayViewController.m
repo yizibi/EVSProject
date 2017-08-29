@@ -177,6 +177,7 @@ static NSString * const ID = @"CONTENTCELL";
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self initial];
     
 }
@@ -502,6 +503,7 @@ static NSString * const ID = @"CONTENTCELL";
             return;
         }
         
+    
         if (self.contentView.frame.size.height == 0) {
             self.contentView.frame = CGRectMake(0, titleY, YZScreenW, YZScreenH - titleY);
         }
@@ -980,15 +982,15 @@ static NSString * const ID = @"CONTENTCELL";
 - (void)setLabelTitleCenter:(UILabel *)label
 {
     
-    // 设置标题滚动区域的偏移量
-    CGFloat offsetX = label.center.x - YZScreenW * 0.5;
+    // 设置标题滚动区域的偏移量(最大的宽度为 屏幕宽度-左右两边的按钮距离88)
+    CGFloat offsetX = label.center.x - (YZScreenW-88) * 0.5;
     
     if (offsetX < 0) {
         offsetX = 0;
     }
     
-    // 计算下最大的标题视图滚动区域
-    CGFloat maxOffsetX = self.titleScrollView.contentSize.width - YZScreenW + _titleMargin;
+    // 计算下最大的标题视图滚动区域(最大的宽度为 屏幕宽度-左右两边的按钮距离88)
+    CGFloat maxOffsetX = self.titleScrollView.contentSize.width - (YZScreenW-88) + _titleMargin;
     
     if (maxOffsetX < 0) {
         maxOffsetX = 0;

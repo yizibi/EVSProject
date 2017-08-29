@@ -45,7 +45,7 @@ static CGFloat const YZTitleTransformScale = 1.3;
 // 下划线默认高度
 static CGFloat const YZUnderLineH = 2;
 
-#define YZScreenW [UIScreen mainScreen].bounds.size.width
+#define YZScreenW ([UIScreen mainScreen].bounds.size.width)
 #define YZScreenH [UIScreen mainScreen].bounds.size.height
 
 // 默认标题字体
