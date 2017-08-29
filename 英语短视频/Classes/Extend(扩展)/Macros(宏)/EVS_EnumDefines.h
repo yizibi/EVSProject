@@ -24,5 +24,21 @@ typedef NS_ENUM(NSInteger,appLoginType) {
 
 };
 
+#pragma mark - 视频按钮点击
+typedef NS_ENUM(NSInteger,videoMoreButtonClicKType) {
+    /** 喜欢 */
+    videoMoreButtonClicKLikeType     = 0,
+    /** 评论 */
+    videoMoreButtonClicKCommentType     = 1,
+    /** 分享 */
+    videoMoreButtonClicKShareType   = 2,
+    /** 更多 */
+    videoMoreButtonClicKMoreType   = 3,
+    /** 播放 */
+    videoMoreButtonClicKPlayType   = 3,
+
+};
+
+
 
 #endif /* EVS_EnumDefines_h */

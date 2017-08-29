@@ -31,6 +31,8 @@
 #import <MJExtension.h>
 #import <UIImageView+WebCache.h>
 #import <MBProgressHUD.h>
+#import "EVSRefreshHeader.h"
+#import "EVSRefreshFooter.h"
 
 
 

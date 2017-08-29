@@ -17,6 +17,10 @@
 		300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CAED61F4AA5A000BB967E /* EVSNavgationController.m */; };
 		300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */; };
 		300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */; };
+		3065544C1F5522BF00427638 /* EVSRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3065544B1F5522BF00427638 /* EVSRefreshHeader.m */; };
+		3065544F1F5522F900427638 /* EVSRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3065544E1F5522F900427638 /* EVSRefreshFooter.m */; };
+		306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306554511F552D1400427638 /* EVSHomeVideoCell.m */; };
+		306554551F552E5300427638 /* EVSCommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 306554541F552E5300427638 /* EVSCommonButton.m */; };
 		3B0A0C8D2DE927E4808FE470 /* libPods-英语短视频.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AFB97D9427A6EE41B3EE99 /* libPods-英语短视频.a */; };
 		3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61B1F4C652F0073CBEA /* EVSMineController.m */; };
 		3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */; };
@@ -86,6 +90,14 @@
 		300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHomeController.m; sourceTree = "<group>"; };
 		300CAEDD1F4AA9AD00BB967E /* LX_CustomNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LX_CustomNavBarView.h; sourceTree = "<group>"; };
 		300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LX_CustomNavBarView.m; sourceTree = "<group>"; };
+		3065544A1F5522BF00427638 /* EVSRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRefreshHeader.h; sourceTree = "<group>"; };
+		3065544B1F5522BF00427638 /* EVSRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRefreshHeader.m; sourceTree = "<group>"; };
+		3065544D1F5522F900427638 /* EVSRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRefreshFooter.h; sourceTree = "<group>"; };
+		3065544E1F5522F900427638 /* EVSRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRefreshFooter.m; sourceTree = "<group>"; };
+		306554501F552D1400427638 /* EVSHomeVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSHomeVideoCell.h; sourceTree = "<group>"; };
+		306554511F552D1400427638 /* EVSHomeVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHomeVideoCell.m; sourceTree = "<group>"; };
+		306554531F552E5300427638 /* EVSCommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSCommonButton.h; sourceTree = "<group>"; };
+		306554541F552E5300427638 /* EVSCommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSCommonButton.m; sourceTree = "<group>"; };
 		3C49A61A1F4C652F0073CBEA /* EVSMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMineController.h; sourceTree = "<group>"; };
 		3C49A61B1F4C652F0073CBEA /* EVSMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineController.m; sourceTree = "<group>"; };
 		3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVS_MineCell.h; sourceTree = "<group>"; };
@@ -356,6 +368,8 @@
 		300CAEB71F4A8EF700BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				306554501F552D1400427638 /* EVSHomeVideoCell.h */,
+				306554511F552D1400427638 /* EVSHomeVideoCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +419,7 @@
 		300CAEBD1F4AA4F100BB967E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				306554491F55226C00427638 /* TdLibConfig(三方配置) */,
 				300CAEBE1F4AA4F100BB967E /* Base(基类) */,
 				300CAEC21F4AA4F100BB967E /* Guide(引导页) */,
 				300CAEC61F4AA4F100BB967E /* Login&Register(登录注册) */,
@@ -445,6 +460,8 @@
 			children = (
 				300CAEDD1F4AA9AD00BB967E /* LX_CustomNavBarView.h */,
 				300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */,
+				306554531F552E5300427638 /* EVSCommonButton.h */,
+				306554541F552E5300427638 /* EVSCommonButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,6 +566,17 @@
 			children = (
 			);
 			path = "Service(服务接口)";
+			sourceTree = "<group>";
+		};
+		306554491F55226C00427638 /* TdLibConfig(三方配置) */ = {
+			isa = PBXGroup;
+			children = (
+				3065544A1F5522BF00427638 /* EVSRefreshHeader.h */,
+				3065544B1F5522BF00427638 /* EVSRefreshHeader.m */,
+				3065544D1F5522F900427638 /* EVSRefreshFooter.h */,
+				3065544E1F5522F900427638 /* EVSRefreshFooter.m */,
+			);
+			path = "TdLibConfig(三方配置)";
 			sourceTree = "<group>";
 		};
 		3C9404221F52A6F5008E523F /* ConsoleCheseInput */ = {
@@ -880,17 +908,21 @@
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
+				306554551F552E5300427638 /* EVSCommonButton.m in Sources */,
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
 				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
 				3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */,
+				3065544F1F5522F900427638 /* EVSRefreshFooter.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
 				3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */,
 				3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */,
+				3065544C1F5522BF00427638 /* EVSRefreshHeader.m in Sources */,
 				3C9404391F5302CE008E523F /* YZDisplayTitleLabel.m in Sources */,
 				3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
+				306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */,
 				3C9404151F52A62E008E523F /* EVSConst.m in Sources */,
 				3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */,
 				3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */,
