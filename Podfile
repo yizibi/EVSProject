@@ -6,13 +6,14 @@ target '英语短视频' do
   # use_frameworks!
 
   # Pods for 英语短视频
-  
+  pod "AFNetworking", '~> 3.0'
+  pod "Qiniu", "~> 7.1”
   pod 'Masonry', '~> 1.0.0'
   pod 'MBProgressHUD', '~> 0.9.2'
   pod 'MJRefresh', '~> 3.0.8'
   pod 'SDWebImage', '~> 3.7.3'
   pod 'MJExtension', '~> 3.0.10'
-
+  
   target '英语短视频Tests' do
     inherit! :search_paths
     # Pods for testing

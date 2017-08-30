@@ -40,6 +40,11 @@
 		3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404341F5302CE008E523F /* YZDisplayViewController.m */; };
 		3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404371F5302CE008E523F /* YZFlowLayout.m */; };
 		3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94043D1F530590008E523F /* EVSBaseListController.m */; };
+		3C94044A1F571121008E523F /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404431F571121008E523F /* FastForwardView.m */; };
+		3C94044B1F571121008E523F /* FastForwardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9404441F571121008E523F /* FastForwardView.xib */; };
+		3C94044C1F571121008E523F /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404461F571121008E523F /* WMLightView.m */; };
+		3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C9404471F571121008E523F /* WMPlayer.bundle */; };
+		3C94044E1F571121008E523F /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404491F571121008E523F /* WMPlayer.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -137,6 +142,14 @@
 		3C9404371F5302CE008E523F /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
 		3C94043C1F530590008E523F /* EVSBaseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSBaseListController.h; sourceTree = "<group>"; };
 		3C94043D1F530590008E523F /* EVSBaseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSBaseListController.m; sourceTree = "<group>"; };
+		3C9404421F571121008E523F /* FastForwardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastForwardView.h; sourceTree = "<group>"; };
+		3C9404431F571121008E523F /* FastForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastForwardView.m; sourceTree = "<group>"; };
+		3C9404441F571121008E523F /* FastForwardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FastForwardView.xib; sourceTree = "<group>"; };
+		3C9404451F571121008E523F /* WMLightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLightView.h; sourceTree = "<group>"; };
+		3C9404461F571121008E523F /* WMLightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLightView.m; sourceTree = "<group>"; };
+		3C9404471F571121008E523F /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
+		3C9404481F571121008E523F /* WMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
+		3C9404491F571121008E523F /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +342,7 @@
 		300CAEB31F4A8EF700BB967E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3C94043F1F571121008E523F /* ThirdLib(第三方库) */,
 				300CAEB81F4A8EF700BB967E /* Mine(我的) */,
 				300CAEB41F4A8EF700BB967E /* Home(主页) */,
 				300CAECE1F4AA4FC00BB967E /* Service(服务接口) */,
@@ -608,6 +622,37 @@
 			path = TitleVcLib;
 			sourceTree = "<group>";
 		};
+		3C94043F1F571121008E523F /* ThirdLib(第三方库) */ = {
+			isa = PBXGroup;
+			children = (
+				3C9404401F571121008E523F /* WMPlayer */,
+			);
+			path = "ThirdLib(第三方库)";
+			sourceTree = "<group>";
+		};
+		3C9404401F571121008E523F /* WMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3C9404411F571121008E523F /* View */,
+				3C9404471F571121008E523F /* WMPlayer.bundle */,
+				3C9404481F571121008E523F /* WMPlayer.h */,
+				3C9404491F571121008E523F /* WMPlayer.m */,
+			);
+			path = WMPlayer;
+			sourceTree = "<group>";
+		};
+		3C9404411F571121008E523F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C9404421F571121008E523F /* FastForwardView.h */,
+				3C9404431F571121008E523F /* FastForwardView.m */,
+				3C9404441F571121008E523F /* FastForwardView.xib */,
+				3C9404451F571121008E523F /* WMLightView.h */,
+				3C9404461F571121008E523F /* WMLightView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		994E0B879E41887E64C83214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,8 +782,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */,
 				300CAE851F4A854F00BB967E /* LaunchScreen.storyboard in Resources */,
 				300CAE821F4A854F00BB967E /* Assets.xcassets in Resources */,
+				3C94044B1F571121008E523F /* FastForwardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +878,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		9E7C47414A8267D2E5F329CC /* [CP] Check Pods Manifest.lock */ = {
@@ -846,7 +893,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C58DCB7A3C5E54A855F87557 /* [CP] Check Pods Manifest.lock */ = {
@@ -861,7 +908,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		E7F71297CFC44879AF6AA58D /* [CP] Copy Pods Resources */ = {
@@ -904,6 +951,7 @@
 				3C9404211F52A6A3008E523F /* UIViewController+LX_HUD.m in Sources */,
 				3C9404181F52A66F008E523F /* UIView+LXFrame.m in Sources */,
 				3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */,
+				3C94044E1F571121008E523F /* WMPlayer.m in Sources */,
 				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
@@ -912,6 +960,7 @@
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
 				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
+				3C94044A1F571121008E523F /* FastForwardView.m in Sources */,
 				3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */,
 				3065544F1F5522F900427638 /* EVSRefreshFooter.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
@@ -927,6 +976,7 @@
 				3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */,
 				3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */,
 				3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */,
+				3C94044C1F571121008E523F /* WMLightView.m in Sources */,
 				3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */,
 				3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */,
 			);
