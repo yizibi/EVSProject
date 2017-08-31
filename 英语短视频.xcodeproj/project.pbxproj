@@ -45,6 +45,14 @@
 		3C94044C1F571121008E523F /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404461F571121008E523F /* WMLightView.m */; };
 		3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C9404471F571121008E523F /* WMPlayer.bundle */; };
 		3C94044E1F571121008E523F /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404491F571121008E523F /* WMPlayer.m */; };
+		3C9404601F585396008E523F /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94045B1F585396008E523F /* SVIndefiniteAnimatedView.m */; };
+		3C9404611F585396008E523F /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C94045D1F585396008E523F /* SVProgressHUD.bundle */; };
+		3C9404621F585396008E523F /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94045F1F585396008E523F /* SVProgressHUD.m */; };
+		3C94046B1F58566F008E523F /* LXNetworkHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404661F58566F008E523F /* LXNetworkHandler.m */; };
+		3C94046C1F58566F008E523F /* LXNetworkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404681F58566F008E523F /* LXNetworkItem.m */; };
+		3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94046A1F58566F008E523F /* LXUnityclass.m */; };
+		3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404701F585760008E523F /* LXQiniuUploadManger.m */; };
+		3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404731F5857B8008E523F /* LXUploadTool.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -150,6 +158,23 @@
 		3C9404471F571121008E523F /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
 		3C9404481F571121008E523F /* WMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
 		3C9404491F571121008E523F /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
+		3C94045A1F585396008E523F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3C94045B1F585396008E523F /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3C94045C1F585396008E523F /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3C94045D1F585396008E523F /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3C94045E1F585396008E523F /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3C94045F1F585396008E523F /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3C9404641F58566F008E523F /* LXNetworkDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkDefines.h; sourceTree = "<group>"; };
+		3C9404651F58566F008E523F /* LXNetworkHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkHandler.h; sourceTree = "<group>"; };
+		3C9404661F58566F008E523F /* LXNetworkHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkHandler.m; sourceTree = "<group>"; };
+		3C9404671F58566F008E523F /* LXNetworkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworkItem.h; sourceTree = "<group>"; };
+		3C9404681F58566F008E523F /* LXNetworkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworkItem.m; sourceTree = "<group>"; };
+		3C9404691F58566F008E523F /* LXUnityclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXUnityclass.h; sourceTree = "<group>"; };
+		3C94046A1F58566F008E523F /* LXUnityclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXUnityclass.m; sourceTree = "<group>"; };
+		3C94046F1F585760008E523F /* LXQiniuUploadManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXQiniuUploadManger.h; sourceTree = "<group>"; };
+		3C9404701F585760008E523F /* LXQiniuUploadManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQiniuUploadManger.m; sourceTree = "<group>"; };
+		3C9404721F5857B8008E523F /* LXUploadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXUploadTool.h; sourceTree = "<group>"; };
+		3C9404731F5857B8008E523F /* LXUploadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXUploadTool.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -578,6 +603,8 @@
 		300CAECE1F4AA4FC00BB967E /* Service(服务接口) */ = {
 			isa = PBXGroup;
 			children = (
+				3C94046E1F585741008E523F /* BaseUploadHelper */,
+				3C9404631F58566F008E523F /* BaseServiceLib */,
 			);
 			path = "Service(服务接口)";
 			sourceTree = "<group>";
@@ -625,6 +652,7 @@
 		3C94043F1F571121008E523F /* ThirdLib(第三方库) */ = {
 			isa = PBXGroup;
 			children = (
+				3C9404591F585396008E523F /* SVProgressHUD */,
 				3C9404401F571121008E523F /* WMPlayer */,
 			);
 			path = "ThirdLib(第三方库)";
@@ -651,6 +679,44 @@
 				3C9404461F571121008E523F /* WMLightView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3C9404591F585396008E523F /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3C94045A1F585396008E523F /* SVIndefiniteAnimatedView.h */,
+				3C94045B1F585396008E523F /* SVIndefiniteAnimatedView.m */,
+				3C94045C1F585396008E523F /* SVProgressHUD-Prefix.pch */,
+				3C94045D1F585396008E523F /* SVProgressHUD.bundle */,
+				3C94045E1F585396008E523F /* SVProgressHUD.h */,
+				3C94045F1F585396008E523F /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		3C9404631F58566F008E523F /* BaseServiceLib */ = {
+			isa = PBXGroup;
+			children = (
+				3C9404641F58566F008E523F /* LXNetworkDefines.h */,
+				3C9404651F58566F008E523F /* LXNetworkHandler.h */,
+				3C9404661F58566F008E523F /* LXNetworkHandler.m */,
+				3C9404671F58566F008E523F /* LXNetworkItem.h */,
+				3C9404681F58566F008E523F /* LXNetworkItem.m */,
+				3C9404691F58566F008E523F /* LXUnityclass.h */,
+				3C94046A1F58566F008E523F /* LXUnityclass.m */,
+			);
+			path = BaseServiceLib;
+			sourceTree = "<group>";
+		};
+		3C94046E1F585741008E523F /* BaseUploadHelper */ = {
+			isa = PBXGroup;
+			children = (
+				3C94046F1F585760008E523F /* LXQiniuUploadManger.h */,
+				3C9404701F585760008E523F /* LXQiniuUploadManger.m */,
+				3C9404721F5857B8008E523F /* LXUploadTool.h */,
+				3C9404731F5857B8008E523F /* LXUploadTool.m */,
+			);
+			path = BaseUploadHelper;
 			sourceTree = "<group>";
 		};
 		994E0B879E41887E64C83214 /* Frameworks */ = {
@@ -782,6 +848,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9404611F585396008E523F /* SVProgressHUD.bundle in Resources */,
 				3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */,
 				300CAE851F4A854F00BB967E /* LaunchScreen.storyboard in Resources */,
 				300CAE821F4A854F00BB967E /* Assets.xcassets in Resources */,
@@ -953,11 +1020,16 @@
 				3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */,
 				3C94044E1F571121008E523F /* WMPlayer.m in Sources */,
 				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
+				3C9404621F585396008E523F /* SVProgressHUD.m in Sources */,
+				3C9404601F585396008E523F /* SVIndefiniteAnimatedView.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
+				3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
 				306554551F552E5300427638 /* EVSCommonButton.m in Sources */,
+				3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */,
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
+				3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
 				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
 				3C94044A1F571121008E523F /* FastForwardView.m in Sources */,
@@ -969,6 +1041,8 @@
 				3065544C1F5522BF00427638 /* EVSRefreshHeader.m in Sources */,
 				3C9404391F5302CE008E523F /* YZDisplayTitleLabel.m in Sources */,
 				3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */,
+				3C94046B1F58566F008E523F /* LXNetworkHandler.m in Sources */,
+				3C94046C1F58566F008E523F /* LXNetworkItem.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
 				306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */,
