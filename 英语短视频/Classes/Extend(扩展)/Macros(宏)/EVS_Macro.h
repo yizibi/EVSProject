@@ -57,4 +57,44 @@
 #define LXNavgationTitleFont [UIFont systemFontOfSize:17]
 
 
+
+/**************************   网络基类中用到的宏   *******************************/
+
+/**
+ *  显示HUD
+ */
+#define DEFN_SHOW_HUD  @"show_hud"
+
+/**
+ *  隐藏HUD
+ */
+#define DEFN_HIDE_HUD  @"hide_hud"
+
+
+
+/**
+ *	取出永久存储的对象
+ *
+ *	@param	key     所需对象对应的key
+ *	@return	key     所对应的对象
+ */
+#define DEF_PERSISTENT_GET_OBJECT(key)  [[NSUserDefaults standardUserDefaults] objectForKey:key]
+
+
+/**
+ *	永久存储对象
+ *
+ *  NSUserDefaults保存的文件在tmp文件夹里
+ *
+ *	@param	object      需存储的对象
+ *	@param	key         对应的key
+ */
+#define DEF_PERSISTENT_SET_OBJECT(object, key)                                                                                                 \
+({                                                                                                                                             \
+NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];                                                                          \
+[defaults setObject:object forKey:key];                                                                                                    \
+[defaults synchronize];                                                                                                                    \
+})
+
+
 #endif /* EVS_Macro_h */

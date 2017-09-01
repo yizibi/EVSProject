@@ -33,6 +33,9 @@
 #import <MBProgressHUD.h>
 #import "EVSRefreshHeader.h"
 #import "EVSRefreshFooter.h"
+#import <AFNetworking.h>
+#import <QiniuSDK.h>
+#import "SVProgressHUD.h"
 
 
 
