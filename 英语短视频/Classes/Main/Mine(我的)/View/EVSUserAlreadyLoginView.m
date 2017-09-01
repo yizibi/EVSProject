@@ -99,7 +99,7 @@
         _head_ImageView.userInteractionEnabled = YES;
         _head_ImageView.layer.cornerRadius = 30*Y_HeightScale;
         _head_ImageView.layer.masksToBounds = YES;
-        _head_ImageView.backgroundColor = LXUIRandomColor;
+        _head_ImageView.image = [UIImage imageNamed:@"注册-头像"];
     }
     return _head_ImageView;
 }

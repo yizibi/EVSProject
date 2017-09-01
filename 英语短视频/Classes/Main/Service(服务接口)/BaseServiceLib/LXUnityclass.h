@@ -43,38 +43,6 @@
 + (NSDateComponents *)insertFutureTime:(NSString *)futureTime;
 
 
-//初始化系统控件
-
-+(UIImageView*)initUIImageView:(NSString*) imageName rect:(CGRect)rectImage;
-
-/**
- *  系统控件 UIButton的初始化
- *
- *  @param rectButton rectButton description
- *  @param strName    strName description
- *
- *  @return return value description
- */
-+(UIButton*)initButton:(CGRect)rectButton str:(NSString*)strName;
-
-
-
-/**
- *  获取字符串的高度
- *
- *  @param str  str description
- *  @param th   th description
- *  @param size size description
- *
- *  @return return value description
- */
-+ (float)getHeight:(NSString *)str wid:(CGFloat)th font:(CGFloat)size;
-
-//获得字符串宽度
-+ (float)getWidth:(NSString *)str wid:(CGFloat)th font:(CGFloat)size;
-
-//根据字符串的宽度获取size
-+ (float)getboldWidth:(NSString *)str wid:(CGFloat)th font:(CGFloat)size;
 /**
  *  初始化系统弹出框
  *
@@ -254,7 +222,6 @@
  *  @param twoStr     第二个价格
  *  @param twoColor   颜色
  *  @param twoFont    字体
- *  @param heightAltitude   高度差
  *
  *  @return 返回控件
  */

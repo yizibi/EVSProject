@@ -10,7 +10,6 @@
 #import "LXUnityclass.h"
 
 #import <QuartzCore/QuartzCore.h>
-#import "AppDelegate.h"
 
 
 @implementation LXUnityclass
@@ -772,14 +771,15 @@ static LXUnityclass *unityObject = nil;
     NSString *chineseCal_str =[NSString stringWithFormat: @"%@-%@-%@",y_str,m_str,d_str];
     return chineseCal_str;
 }
-/**
- *  获取时间差
- *
- *  @param date date description
- *
- *  @return return value description
- */
 
+
+/**
+获取时间差 Description
+
+ @param first first description
+ @param sec sec description
+ @return return value description
+ */
 +(NSString *) returnUploadTimeWithFirstTime:(NSString*)first secTime:(NSString*)sec
 {
     

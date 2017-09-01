@@ -102,17 +102,13 @@
 - (void)setUpNavBar {
     //左边的头像
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setTitle:@"头像" forState:UIControlStateNormal];
-    [leftButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    leftButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    [leftButton setImage:[UIImage imageNamed:@"首页-我的"] forState:UIControlStateNormal];
     [leftButton addTarget:self action:@selector(homeControllerLeftButtonClick) forControlEvents:UIControlEventTouchUpInside];
     leftButton.frame = CGRectMake(0, 20, 44, 44);
     
     //右边的搜索
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setTitle:@"搜索" forState:UIControlStateNormal];
-    [rightButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    rightButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    [rightButton setImage:[UIImage imageNamed:@"首页-搜索"] forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(homeControllerRightButtonClick) forControlEvents:UIControlEventTouchUpInside];
     rightButton.frame = CGRectMake(SCREEN_WIDTH-44, 20,44,44);
 

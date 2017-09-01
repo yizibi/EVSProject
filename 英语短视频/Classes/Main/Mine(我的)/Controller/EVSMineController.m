@@ -37,6 +37,7 @@ static NSString * const mineCellID = @"mineCellID";
 
 /** 分类数组 */
 @property (nonatomic, strong) NSArray *classityarray;
+@property (nonatomic, strong) NSArray *imageArray;
 @end
 
 @implementation EVSMineController
@@ -63,6 +64,13 @@ static NSString * const mineCellID = @"mineCellID";
                            @"意见反馈"];
 
     
+    self.imageArray = @[@"我的-视频上传icon",
+                        @"我的-消息通知icon",
+                        @"我的-收藏icon",
+                        @"我的-下载icon",
+                        @"我的-关注",
+                        @"我的-历史观看icon",
+                        @"我的-意见反馈icon"];
     
 }
 
@@ -92,27 +100,27 @@ static NSString * const mineCellID = @"mineCellID";
     
     if (indexPath.section == 0) {
         cell.classifyLable.text = self.classityarray[indexPath.row];
-        /* 隐藏图片
-        NSString *imgStr = self.signArray[indexPath.row];
+        
+        NSString *imgStr = self.imageArray[indexPath.row];
         cell.leftImageView.image = [UIImage imageNamed:imgStr];
-         */
+         
         
     }
     else if (indexPath.section == 1){
         cell.classifyLable.text = self.classityarray[indexPath.row+5];
-        /*
-        NSString *imgStr = self.signArray[indexPath.row+4];
+        
+        NSString *imgStr = self.imageArray[indexPath.row+5];
         cell.leftImageView.image = [UIImage imageNamed:imgStr];
-         */
+        
         
     }
     
     else if (indexPath.section == 2){
         cell.classifyLable.text = self.classityarray[indexPath.row+6];
-        /*
-         NSString *imgStr = self.signArray[indexPath.row+4];
+        
+         NSString *imgStr = self.imageArray[indexPath.row+6];
          cell.leftImageView.image = [UIImage imageNamed:imgStr];
-         */
+        
         
     }
     return cell;

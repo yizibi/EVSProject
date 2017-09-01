@@ -12,6 +12,7 @@
 #import <MBProgressHUD.h>
 #import "LXUnityclass.h"
 
+
 @interface LXNetworkItem : NSObject
 
 
@@ -113,7 +114,6 @@
  *
  *  @param networkType  网络请求方式
  *  @param url          网络请求URL
- *  @param params       网络请求参数
  *  @param delegate     网络请求的委托，如果没有取消网络请求的需求，可传nil
  *  @param hashValue    网络请求的委托delegate的唯一标示
  *  @param startBlock   请求开始后的block

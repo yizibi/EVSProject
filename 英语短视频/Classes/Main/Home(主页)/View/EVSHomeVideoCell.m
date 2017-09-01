@@ -69,10 +69,36 @@
     [self layoutSubviewContrains];
 }
 
-
 #pragma mark - actions
 - (void)homeVideoCellWithButtonClicked:(UIButton *)button {
-    LXLogFunc;
+    
+    switch (button.tag) {
+        case videoMoreButtonClicKLikeType:
+        {
+            button.selected = !button.selected;
+        }
+            break;
+            
+        case videoMoreButtonClicKCommentType:
+        {
+            LXLog(@"评论");
+        }
+            break;
+        case videoMoreButtonClicKShareType:
+        {
+            LXLog(@"分享");
+        }
+            break;
+        case videoMoreButtonClicKMoreType:
+        {
+            LXLog(@"更多");
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 
@@ -147,7 +173,7 @@
     [self.like_Button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.head_ImgView.mas_centerY);
         make.right.mas_equalTo(self.comment_Button.mas_left).mas_offset(-10);
-        make.width.mas_equalTo(40);
+        make.width.mas_equalTo(60);
 
     }];
     
@@ -165,8 +191,7 @@
 - (UIButton *)play_Button{
     if (!_play_Button) {
         _play_Button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_play_Button setTitle:@"播放" forState:UIControlStateNormal];
-        [_play_Button setTitleColor:LXUIRandomColor forState:UIControlStateNormal];
+        [_play_Button setImage:[UIImage imageNamed:@"播放icon"] forState:UIControlStateNormal];
         _play_Button.tag = videoMoreButtonClicKPlayType;
         [_play_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _play_Button.titleLabel.font = [UIFont systemFontOfSize:18.0];
@@ -177,8 +202,7 @@
 - (UIButton *)more_Button{
     if (!_more_Button) {
         _more_Button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_more_Button setTitle:@"更多" forState:UIControlStateNormal];
-        [_more_Button setTitleColor:LXUIRandomColor forState:UIControlStateNormal];
+        [_more_Button setImage:[UIImage imageNamed:@"首页-更多"] forState:UIControlStateNormal];
         _more_Button.tag = videoMoreButtonClicKMoreType;
         [_more_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _more_Button.titleLabel.font = [UIFont systemFontOfSize:13.0];
@@ -189,8 +213,7 @@
 - (UIButton *)share_Button{
     if (!_share_Button) {
         _share_Button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_share_Button setTitle:@"分享" forState:UIControlStateNormal];
-        [_share_Button setTitleColor:LXUIRandomColor forState:UIControlStateNormal];
+        [_share_Button setImage:[UIImage imageNamed:@"首页-分享"] forState:UIControlStateNormal];
         _share_Button.tag = videoMoreButtonClicKShareType;
         [_share_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _share_Button.titleLabel.font = [UIFont systemFontOfSize:13.0];
@@ -203,6 +226,7 @@
     if (!_comment_Button) {
         _comment_Button = [EVSCommonButton buttonWithType:UIButtonTypeCustom];
         [_comment_Button setTitle:@"10" forState:UIControlStateNormal];
+        [_comment_Button setImage:[UIImage imageNamed:@"首页-评论"] forState:UIControlStateNormal];
         _comment_Button.tag = videoMoreButtonClicKCommentType;
         [_comment_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -214,6 +238,8 @@
     if (!_like_Button) {
         _like_Button = [EVSCommonButton buttonWithType:UIButtonTypeCustom];
         [_like_Button setTitle:@"1009" forState:UIControlStateNormal];
+        [_like_Button setImage:[UIImage imageNamed:@"首页-收藏"] forState:UIControlStateNormal];
+        [_like_Button setImage:[UIImage imageNamed:@"首页-收藏-选中"] forState:UIControlStateSelected];
         _like_Button.tag = videoMoreButtonClicKLikeType;
         [_like_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -226,6 +252,7 @@
         _head_ImgView = [[UIImageView alloc] init];
         _head_ImgView.userInteractionEnabled = YES;
         _head_ImgView.layer.cornerRadius = 20*Y_HeightScale;
+        _head_ImgView.image = [UIImage imageNamed:@"注册-头像"];
         _head_ImgView.layer.masksToBounds = YES;
         _head_ImgView.backgroundColor = LXUIRandomColor;
     }

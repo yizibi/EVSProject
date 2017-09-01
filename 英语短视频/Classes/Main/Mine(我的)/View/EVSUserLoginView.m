@@ -42,18 +42,20 @@
 - (void)creatLoginButtons {
     
     //初始化按钮数组
-//    NSArray *buttonTitles = @[@"手机",@"微信",@"微博",@"qq"];
-        
+    NSArray *buttonTitles = @[@"手机",@"分享-微信",@"微博",@"分享-qq"];
+    
     CGFloat buttonW = (SCREEN_WIDTH-(MARGIN_BUTTON_LEFT_RIGHT)*2-MARGIN_BUTTON*3)/4;
     
     for (int i = 0; i < 4; i++) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         
+        NSString *imageName = [NSString stringWithFormat:@"%@",buttonTitles[i]];
+        
+        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        
         CGFloat buttonX = MARGIN_BUTTON_LEFT_RIGHT + (buttonW + MARGIN_BUTTON) * i;
         
-        
-        [button setBackgroundColor:LXUIRandomColor];
         
         button.tag = 1000 + i;
         

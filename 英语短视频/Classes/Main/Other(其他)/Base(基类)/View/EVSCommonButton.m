@@ -16,11 +16,11 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         
-        [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 0)];
+        [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 3, 0, 0)];
         
-        [self setImageEdgeInsets:UIEdgeInsetsMake(0, 5, 0, 0)];
+        [self setImageEdgeInsets:UIEdgeInsetsMake(0, -3, 0, 0)];
         
-        [self setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self setTitleColor:LXCommongrayColor forState:UIControlStateNormal];
         
         self.titleLabel.font = [UIFont systemFontOfSize:13.0];
         
