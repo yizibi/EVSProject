@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger,videoMoreButtonClicKType) {
     /** 更多 */
     videoMoreButtonClicKMoreType   = 3,
     /** 播放 */
-    videoMoreButtonClicKPlayType   = 3,
+    videoMoreButtonClicKPlayType   = 4,
 
 };
 

@@ -22,7 +22,7 @@
 #import "UIImage+LX_Extend.h"
 #import "MBProgressHUD+LX_Extention.h"
 #import "UIViewController+LX_HUD.h"
-
+#import "UIGestureRecognizer+Extention.h"
 
 
 //第三方库

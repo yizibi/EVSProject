@@ -71,36 +71,19 @@
 
 #pragma mark - actions
 - (void)homeVideoCellWithButtonClicked:(UIButton *)button {
-    
-    switch (button.tag) {
-        case videoMoreButtonClicKLikeType:
-        {
-            button.selected = !button.selected;
-        }
-            break;
-            
-        case videoMoreButtonClicKCommentType:
-        {
-            LXLog(@"评论");
-        }
-            break;
-        case videoMoreButtonClicKShareType:
-        {
-            LXLog(@"分享");
-        }
-            break;
-        case videoMoreButtonClicKMoreType:
-        {
-            LXLog(@"更多");
-        }
-            break;
-            
-        default:
-            break;
+    if ([self.delegate respondsToSelector:@selector(homeVideoCell:didSelectButton:indexPath:)]) {
+        [self.delegate homeVideoCell:self didSelectButton:button indexPath:_indexPath];
     }
     
 }
 
+#pragma mark - 头像点击
+- (void)head_ImgViewClicked:(UITapGestureRecognizer *)tap{
+    LXLog(@"点击了头像");
+    if ([self.delegate respondsToSelector:@selector(homeVideoCell:didClickedHeadImg:indexPath:)]) {
+        [self.delegate homeVideoCell:self didClickedHeadImg:tap indexPath:_indexPath];
+    }
+}
 
 - (void)layoutSubviewContrains{
     
@@ -151,20 +134,28 @@
     [self.head_ImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.title_Lable.mas_left).mas_offset(0);
         make.top.mas_equalTo(self.videoCover_ImgView.mas_bottom).mas_offset(10*Y_HeightScale);
-        make.width.mas_equalTo(40*Y_HeightScale);
-        make.height.mas_equalTo(40*Y_HeightScale);
+        make.width.mas_equalTo(30*Y_HeightScale);
+        make.height.mas_equalTo(30*Y_HeightScale);
     }];
     
     
     [self.more_Button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.head_ImgView.mas_centerY);
-        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(-10);
+        make.right.mas_equalTo(self.contentView.mas_right).mas_offset(0);
         make.width.mas_equalTo(30);
+    }];
+    
+    [self.share_Button mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.centerY.mas_equalTo(self.head_ImgView.mas_centerY);
+        make.right.mas_equalTo(self.more_Button.mas_left).mas_offset(0);
+        make.width.mas_equalTo(40);
+
     }];
     
     [self.comment_Button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(self.head_ImgView.mas_centerY);
-        make.right.mas_equalTo(self.more_Button.mas_left).mas_offset(-10);
+        make.right.mas_equalTo(self.share_Button.mas_left).mas_offset(-10);
         make.width.mas_equalTo(40);
 
     }];
@@ -203,6 +194,7 @@
     if (!_more_Button) {
         _more_Button = [UIButton buttonWithType:UIButtonTypeCustom];
         [_more_Button setImage:[UIImage imageNamed:@"首页-更多"] forState:UIControlStateNormal];
+        [_more_Button setImageEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 0)];
         _more_Button.tag = videoMoreButtonClicKMoreType;
         [_more_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _more_Button.titleLabel.font = [UIFont systemFontOfSize:13.0];
@@ -213,10 +205,9 @@
 - (UIButton *)share_Button{
     if (!_share_Button) {
         _share_Button = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_share_Button setImage:[UIImage imageNamed:@"首页-分享"] forState:UIControlStateNormal];
+        [_share_Button setImage:[UIImage imageNamed:@"home_shareButton_icon"] forState:UIControlStateNormal];
         _share_Button.tag = videoMoreButtonClicKShareType;
         [_share_Button addTarget:self action:@selector(homeVideoCellWithButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-        _share_Button.titleLabel.font = [UIFont systemFontOfSize:13.0];
     }
     return _share_Button;
 }
@@ -251,10 +242,11 @@
     if (!_head_ImgView) {
         _head_ImgView = [[UIImageView alloc] init];
         _head_ImgView.userInteractionEnabled = YES;
-        _head_ImgView.layer.cornerRadius = 20*Y_HeightScale;
+        _head_ImgView.layer.cornerRadius = 15*Y_HeightScale;
         _head_ImgView.image = [UIImage imageNamed:@"注册-头像"];
         _head_ImgView.layer.masksToBounds = YES;
-        _head_ImgView.backgroundColor = LXUIRandomColor;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(head_ImgViewClicked:)];
+        [_head_ImgView addGestureRecognizer:tap];
     }
     return _head_ImgView;
 }
@@ -263,7 +255,7 @@
     if (!_nickName_Lable) {
         _nickName_Lable = [[UILabel alloc] init];
         _nickName_Lable.text = @"玉米棒-召唤师";
-        _nickName_Lable.textColor = LXrayColor(189);
+        _nickName_Lable.textColor = kUIColorFromRGB(0X999999);
         _nickName_Lable.textAlignment = NSTextAlignmentLeft;
         _nickName_Lable.numberOfLines = 1;
         _nickName_Lable.font = [UIFont systemFontOfSize:14.0];
@@ -326,6 +318,7 @@
     if (!_imgCoverView) {
         _imgCoverView = [[UIImageView alloc] init];
         _imgCoverView.userInteractionEnabled = YES;
+        _imgCoverView.image = [UIImage imageNamed:@"底 1"];
     }
     return _imgCoverView;
 }

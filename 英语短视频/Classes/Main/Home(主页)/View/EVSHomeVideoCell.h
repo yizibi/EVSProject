@@ -10,6 +10,19 @@
 
 
 static NSString *const EVSHomeVideoCellID = @"EVSHomeVideoCell";
+@class  EVSHomeVideoCell;
+@protocol EVSHomeVideoCellDelegate <NSObject>
+
+@optional
+- (void)homeVideoCell:(EVSHomeVideoCell *)videoCell didSelectButton:(UIButton *)button indexPath:(NSIndexPath *)indexPath;
+- (void)homeVideoCell:(EVSHomeVideoCell *)videoCell didClickedHeadImg:(UITapGestureRecognizer *)tap indexPath:(NSIndexPath *)indexPath;
+@end
+
 @interface EVSHomeVideoCell : UITableViewCell
 
+/** 代理  */
+@property (nonatomic,weak) id<EVSHomeVideoCellDelegate> delegate;
+
+/** indexPath */
+@property (nonatomic, strong) NSIndexPath *indexPath;
 @end

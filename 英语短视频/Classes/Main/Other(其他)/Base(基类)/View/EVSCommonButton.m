@@ -20,9 +20,9 @@
         
         [self setImageEdgeInsets:UIEdgeInsetsMake(0, -3, 0, 0)];
         
-        [self setTitleColor:LXCommongrayColor forState:UIControlStateNormal];
+        [self setTitleColor:LXTitleCommonColor forState:UIControlStateNormal];
         
-        self.titleLabel.font = [UIFont systemFontOfSize:13.0];
+        self.titleLabel.font = [UIFont systemFontOfSize:12.0];
         
         
     }

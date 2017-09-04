@@ -22,6 +22,12 @@
 		306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 306554511F552D1400427638 /* EVSHomeVideoCell.m */; };
 		306554551F552E5300427638 /* EVSCommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 306554541F552E5300427638 /* EVSCommonButton.m */; };
 		3B0A0C8D2DE927E4808FE470 /* libPods-英语短视频.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AFB97D9427A6EE41B3EE99 /* libPods-英语短视频.a */; };
+		3C18C19E1F599B81003E7D27 /* EVSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C18C19D1F599B81003E7D27 /* EVSearchViewController.m */; };
+		3C2A3F921F5A87AE00CB8557 /* LXShareImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C2A3F911F5A87AE00CB8557 /* LXShareImage.bundle */; };
+		3C2A3F951F5A880000CB8557 /* LXShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3F941F5A880000CB8557 /* LXShareItem.m */; };
+		3C2A3F981F5A882200CB8557 /* LXShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3F971F5A882200CB8557 /* LXShareItemCell.m */; };
+		3C2A3F9B1F5A883400CB8557 /* LXShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3F9A1F5A883400CB8557 /* LXShareView.m */; };
+		3C2A3FA11F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */; };
 		3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61B1F4C652F0073CBEA /* EVSMineController.m */; };
 		3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */; };
 		3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94040B1F52A3B7008E523F /* EVSMineHeadView.m */; };
@@ -111,6 +117,17 @@
 		306554511F552D1400427638 /* EVSHomeVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHomeVideoCell.m; sourceTree = "<group>"; };
 		306554531F552E5300427638 /* EVSCommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSCommonButton.h; sourceTree = "<group>"; };
 		306554541F552E5300427638 /* EVSCommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSCommonButton.m; sourceTree = "<group>"; };
+		3C18C19C1F599B81003E7D27 /* EVSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSearchViewController.h; sourceTree = "<group>"; };
+		3C18C19D1F599B81003E7D27 /* EVSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSearchViewController.m; sourceTree = "<group>"; };
+		3C2A3F911F5A87AE00CB8557 /* LXShareImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LXShareImage.bundle; sourceTree = "<group>"; };
+		3C2A3F931F5A880000CB8557 /* LXShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXShareItem.h; sourceTree = "<group>"; };
+		3C2A3F941F5A880000CB8557 /* LXShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXShareItem.m; sourceTree = "<group>"; };
+		3C2A3F961F5A882200CB8557 /* LXShareItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXShareItemCell.h; sourceTree = "<group>"; };
+		3C2A3F971F5A882200CB8557 /* LXShareItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXShareItemCell.m; sourceTree = "<group>"; };
+		3C2A3F991F5A883400CB8557 /* LXShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXShareView.h; sourceTree = "<group>"; };
+		3C2A3F9A1F5A883400CB8557 /* LXShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXShareView.m; sourceTree = "<group>"; };
+		3C2A3F9F1F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Extention.h"; sourceTree = "<group>"; };
+		3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Extention.m"; sourceTree = "<group>"; };
 		3C49A61A1F4C652F0073CBEA /* EVSMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMineController.h; sourceTree = "<group>"; };
 		3C49A61B1F4C652F0073CBEA /* EVSMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineController.m; sourceTree = "<group>"; };
 		3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVS_MineCell.h; sourceTree = "<group>"; };
@@ -326,6 +343,8 @@
 				3C9404171F52A66F008E523F /* UIView+LXFrame.m */,
 				3C9404191F52A681008E523F /* UIImage+LX_Extend.h */,
 				3C94041A1F52A681008E523F /* UIImage+LX_Extend.m */,
+				3C2A3F9F1F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.h */,
+				3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -359,6 +378,7 @@
 		300CAEB21F4A8EF700BB967E /* Tools(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				3C2A3F901F5A86AF00CB8557 /* ShareLib */,
 				3C9404221F52A6F5008E523F /* ConsoleCheseInput */,
 			);
 			path = "Tools(工具)";
@@ -393,6 +413,8 @@
 				300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */,
 				3C94043C1F530590008E523F /* EVSBaseListController.h */,
 				3C94043D1F530590008E523F /* EVSBaseListController.m */,
+				3C18C19C1F599B81003E7D27 /* EVSearchViewController.h */,
+				3C18C19D1F599B81003E7D27 /* EVSearchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -618,6 +640,20 @@
 				3065544E1F5522F900427638 /* EVSRefreshFooter.m */,
 			);
 			path = "TdLibConfig(三方配置)";
+			sourceTree = "<group>";
+		};
+		3C2A3F901F5A86AF00CB8557 /* ShareLib */ = {
+			isa = PBXGroup;
+			children = (
+				3C2A3F911F5A87AE00CB8557 /* LXShareImage.bundle */,
+				3C2A3F931F5A880000CB8557 /* LXShareItem.h */,
+				3C2A3F941F5A880000CB8557 /* LXShareItem.m */,
+				3C2A3F961F5A882200CB8557 /* LXShareItemCell.h */,
+				3C2A3F971F5A882200CB8557 /* LXShareItemCell.m */,
+				3C2A3F991F5A883400CB8557 /* LXShareView.h */,
+				3C2A3F9A1F5A883400CB8557 /* LXShareView.m */,
+			);
+			path = ShareLib;
 			sourceTree = "<group>";
 		};
 		3C9404221F52A6F5008E523F /* ConsoleCheseInput */ = {
@@ -849,6 +885,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9404611F585396008E523F /* SVProgressHUD.bundle in Resources */,
+				3C2A3F921F5A87AE00CB8557 /* LXShareImage.bundle in Resources */,
 				3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */,
 				300CAE851F4A854F00BB967E /* LaunchScreen.storyboard in Resources */,
 				300CAE821F4A854F00BB967E /* Assets.xcassets in Resources */,
@@ -1025,11 +1062,14 @@
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
+				3C2A3F9B1F5A883400CB8557 /* LXShareView.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
 				306554551F552E5300427638 /* EVSCommonButton.m in Sources */,
 				3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */,
+				3C2A3F981F5A882200CB8557 /* LXShareItemCell.m in Sources */,
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
 				3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */,
+				3C2A3FA11F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
 				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
 				3C94044A1F571121008E523F /* FastForwardView.m in Sources */,
@@ -1045,6 +1085,7 @@
 				3C94046C1F58566F008E523F /* LXNetworkItem.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
+				3C2A3F951F5A880000CB8557 /* LXShareItem.m in Sources */,
 				306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */,
 				3C9404151F52A62E008E523F /* EVSConst.m in Sources */,
 				3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */,
@@ -1052,6 +1093,7 @@
 				3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				3C94044C1F571121008E523F /* WMLightView.m in Sources */,
 				3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */,
+				3C18C19E1F599B81003E7D27 /* EVSearchViewController.m in Sources */,
 				3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

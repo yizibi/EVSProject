@@ -55,7 +55,7 @@
 #define LXCommongrayColor  kUIColorFromRGB(0xacacac)
 #define LXNavgationTitleColor  kUIColorFromRGB(0x19181e)
 #define LXNavgationTitleFont [UIFont systemFontOfSize:17]
-
+#define LXTitleCommonColor  kUIColorFromRGB(0X999999)
 
 
 /**************************   网络基类中用到的宏   *******************************/
