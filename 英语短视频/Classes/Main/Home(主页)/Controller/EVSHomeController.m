@@ -96,9 +96,6 @@
     
 }
 
-
-
-
 - (void)setUpNavBar {
     //左边的头像
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];

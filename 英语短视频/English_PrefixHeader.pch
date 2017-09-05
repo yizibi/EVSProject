@@ -23,7 +23,7 @@
 #import "MBProgressHUD+LX_Extention.h"
 #import "UIViewController+LX_HUD.h"
 #import "UIGestureRecognizer+Extention.h"
-
+#import "UILabel+Extention.h"
 
 //第三方库
 #import <Masonry.h>
