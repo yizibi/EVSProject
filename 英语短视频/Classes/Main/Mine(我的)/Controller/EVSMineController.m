@@ -15,6 +15,8 @@
 #import "EVSUserAlreadyLoginView.h"
 #import "EVSMineHeadDelegate.h"
 
+#import "EVSLoginControllerViewController.h"
+#import "EVSNavgationController.h"
 
 static NSString * const mineCellID = @"mineCellID";
 
@@ -78,6 +80,37 @@ static NSString * const mineCellID = @"mineCellID";
 #pragma mark - EVSMineHeadDelegate
 - (void)mineLoginHeadButtonClick:(UIButton *)button{
     LXLogFunc;
+    
+    NSInteger index = button.tag - 1000;
+    switch (index) {
+        case 0:
+        {
+            //手机登录
+            EVSLoginControllerViewController *loginVC = [[EVSLoginControllerViewController alloc] init];
+            EVSNavgationController *loginNav = [[EVSNavgationController alloc] initWithRootViewController:loginVC];
+            [self.navigationController presentViewController:loginNav animated:YES completion:nil];
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 - (void)mineHeadViewDidTouched:(UIView *)headView{

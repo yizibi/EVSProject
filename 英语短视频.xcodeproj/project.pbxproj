@@ -64,6 +64,15 @@
 		3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94046A1F58566F008E523F /* LXUnityclass.m */; };
 		3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404701F585760008E523F /* LXQiniuUploadManger.m */; };
 		3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404731F5857B8008E523F /* LXUploadTool.m */; };
+		3CFC4DC11F6B502F00A8B5CC /* EVSForgetPassWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */; };
+		3CFC4DC21F6B502F00A8B5CC /* EVSForgetPassWordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */; };
+		3CFC4DC31F6B502F00A8B5CC /* EVSLoginControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */; };
+		3CFC4DC41F6B502F00A8B5CC /* EVSLoginControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */; };
+		3CFC4DC51F6B502F00A8B5CC /* EVSRegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */; };
+		3CFC4DC61F6B502F00A8B5CC /* EVSRegisterNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */; };
+		3CFC4DC71F6B502F00A8B5CC /* EVSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */; };
+		3CFC4DC81F6B502F00A8B5CC /* EVSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */; };
+		3CFC4DCB1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
 /* End PBXBuildFile section */
@@ -206,6 +215,20 @@
 		3C9404701F585760008E523F /* LXQiniuUploadManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQiniuUploadManger.m; sourceTree = "<group>"; };
 		3C9404721F5857B8008E523F /* LXUploadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXUploadTool.h; sourceTree = "<group>"; };
 		3C9404731F5857B8008E523F /* LXUploadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXUploadTool.m; sourceTree = "<group>"; };
+		3CFC4DB51F6B502F00A8B5CC /* EVSForgetPassWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSForgetPassWordController.h; sourceTree = "<group>"; };
+		3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSForgetPassWordController.m; sourceTree = "<group>"; };
+		3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSForgetPassWordController.xib; sourceTree = "<group>"; };
+		3CFC4DB81F6B502F00A8B5CC /* EVSLoginControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSLoginControllerViewController.h; sourceTree = "<group>"; };
+		3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSLoginControllerViewController.m; sourceTree = "<group>"; };
+		3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSLoginControllerViewController.xib; sourceTree = "<group>"; };
+		3CFC4DBB1F6B502F00A8B5CC /* EVSRegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRegisterNextViewController.h; sourceTree = "<group>"; };
+		3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRegisterNextViewController.m; sourceTree = "<group>"; };
+		3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSRegisterNextViewController.xib; sourceTree = "<group>"; };
+		3CFC4DBE1F6B502F00A8B5CC /* EVSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRegisterViewController.h; sourceTree = "<group>"; };
+		3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRegisterViewController.m; sourceTree = "<group>"; };
+		3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSRegisterViewController.xib; sourceTree = "<group>"; };
+		3CFC4DC91F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSGetIdentifyCodeButton.h; sourceTree = "<group>"; };
+		3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSGetIdentifyCodeButton.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -594,6 +617,18 @@
 		300CAEC71F4AA4F100BB967E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DB51F6B502F00A8B5CC /* EVSForgetPassWordController.h */,
+				3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */,
+				3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */,
+				3CFC4DB81F6B502F00A8B5CC /* EVSLoginControllerViewController.h */,
+				3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */,
+				3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */,
+				3CFC4DBB1F6B502F00A8B5CC /* EVSRegisterNextViewController.h */,
+				3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */,
+				3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */,
+				3CFC4DBE1F6B502F00A8B5CC /* EVSRegisterViewController.h */,
+				3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */,
+				3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -608,6 +643,8 @@
 		300CAEC91F4AA4F100BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DC91F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.h */,
+				3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -911,8 +948,12 @@
 				3C2A3F921F5A87AE00CB8557 /* LXShareImage.bundle in Resources */,
 				3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */,
 				3C2A3FAF1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib in Resources */,
+				3CFC4DC21F6B502F00A8B5CC /* EVSForgetPassWordController.xib in Resources */,
+				3CFC4DC61F6B502F00A8B5CC /* EVSRegisterNextViewController.xib in Resources */,
+				3CFC4DC81F6B502F00A8B5CC /* EVSRegisterViewController.xib in Resources */,
 				300CAE851F4A854F00BB967E /* LaunchScreen.storyboard in Resources */,
 				300CAE821F4A854F00BB967E /* Assets.xcassets in Resources */,
+				3CFC4DC41F6B502F00A8B5CC /* EVSLoginControllerViewController.xib in Resources */,
 				3C94044B1F571121008E523F /* FastForwardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1080,8 +1121,10 @@
 				3C9404181F52A66F008E523F /* UIView+LXFrame.m in Sources */,
 				3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */,
 				3C94044E1F571121008E523F /* WMPlayer.m in Sources */,
+				3CFC4DC11F6B502F00A8B5CC /* EVSForgetPassWordController.m in Sources */,
 				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
 				3C9404621F585396008E523F /* SVProgressHUD.m in Sources */,
+				3CFC4DC31F6B502F00A8B5CC /* EVSLoginControllerViewController.m in Sources */,
 				3C9404601F585396008E523F /* SVIndefiniteAnimatedView.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */,
@@ -1089,8 +1132,10 @@
 				3C2A3F9B1F5A883400CB8557 /* LXShareView.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
 				306554551F552E5300427638 /* EVSCommonButton.m in Sources */,
+				3CFC4DC51F6B502F00A8B5CC /* EVSRegisterNextViewController.m in Sources */,
 				3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */,
 				3C2A3F981F5A882200CB8557 /* LXShareItemCell.m in Sources */,
+				3CFC4DCB1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m in Sources */,
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
 				3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */,
 				3C2A3FA11F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m in Sources */,
@@ -1103,6 +1148,7 @@
 				3065544F1F5522F900427638 /* EVSRefreshFooter.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
 				3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */,
+				3CFC4DC71F6B502F00A8B5CC /* EVSRegisterViewController.m in Sources */,
 				3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */,
 				3C2A3FA71F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m in Sources */,
 				3065544C1F5522BF00427638 /* EVSRefreshHeader.m in Sources */,
