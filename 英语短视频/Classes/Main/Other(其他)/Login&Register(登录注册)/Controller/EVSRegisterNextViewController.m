@@ -9,30 +9,50 @@
 
 #import "EVSRegisterNextViewController.h"
 
+#import "EVSGetIdentifyCodeButton.h"
+
+
 @interface EVSRegisterNextViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *phoneLable;
+@property (weak, nonatomic) IBOutlet UITextField *inputCodeTextFiled;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet EVSGetIdentifyCodeButton *vertifyCode;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextFiled;
 
 @end
 
 @implementation EVSRegisterNextViewController
 
+- (IBAction)nextButtonClick:(UIButton *)sender {
+    LXLog(@"下一步");
+}
+
+
+- (IBAction)vertifyButtonClick:(UIButton *)sender {
+    LXLog(@"验证码请求");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.titleText = @"注册";
+    self.backText = @"";
+    
+    [self setUpUI];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)setUpUI {
+    
+    self.nextButton.layer.cornerRadius = 3;
+    self.nextButton.layer.masksToBounds = YES;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
-*/
+
 
 @end

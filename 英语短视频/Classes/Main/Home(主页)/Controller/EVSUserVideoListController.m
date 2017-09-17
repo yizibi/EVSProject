@@ -1,146 +1,134 @@
 
 //
-//  EVSBaseListController.m
+//  EVSUserVideoListController.m
 //  英语短视频
 //
-//  Created by 李lucy on 2017/8/27.
+//  Created by 李lucy on 2017/9/17.
 //  Copyright © 2017年 英语短视频. All rights reserved.
 //
 
-#import "EVSBaseListController.h"
-#import "YZDisplayViewHeader.h"
-#import "EVSHomeVideoCell.h"
+#import "EVSUserVideoListController.h"
+#import "EVSUserInfoVideoCell.h"
+#import "LX_Actionsheet.h"
+#import "AppConfig.h"
 #import "LXShareView.h"
 #import "LXShareItem.h"
-#import "EVSPlayVideoDetailController.h"
-#import "EVSUserInfoViewController.h"
 
-
-
-@interface EVSBaseListController ()<UITableViewDelegate,UITableViewDataSource,EVSHomeVideoCellDelegate>
+static NSString *const EVSUserInfoVideoCellID = @"EVSUserInfoVideoCellID";
+@interface EVSUserVideoListController ()<UITableViewDataSource,UITableViewDelegate,EVSUserInfoVideoCellDelegate,LX_ActionsheetDelegate>
 
 /** tableView */
 @property (nonatomic, strong) UITableView *tableView;
+
+
 @property(nonatomic, strong) NSMutableArray *shareArray;
 @property(nonatomic, strong) NSMutableArray *functionArray;
+
+@property (nonatomic, weak) LX_Actionsheet *deleteAcction;
+@property (nonatomic, weak) LX_Actionsheet *moreActionSheet;
+
 @end
 
-
-@implementation EVSBaseListController
-
+@implementation EVSUserVideoListController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.customNavBar.hidden = YES;
-
-    self.view.backgroundColor = LXUIRandomColor;
+    
+    
+    [self setUpNavBar];
     
     [self.view addSubview:self.tableView];
     
-    
-    /****滚动完成请求数据*******/
-    
-    // 如果想要滚动完成或者标题点击的时候，加载数据，需要监听通知
-    
-    // 监听滚动完成或者点击标题，只要滚动完成，当前控制器就会发出通知
-    
-    // 只需要监听自己发出的，不需要监听所有对象发出的通知，否则会导致一个控制器发出，所有控制器都能监听,造成所有控制器请求数据
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadData) name:YZDisplayViewClickOrScrollDidFinshNote object:self];
-
 }
 
 
-- (void)loadData{
-    
-    [self showProgressHUD];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self hideHud];
+#pragma mark - LX_ActionsheetDelegate
+- (void)actionsheet:(LX_Actionsheet *)actionsheet didClickButtonIndex:(NSInteger)buttonIndex {
+    if ([actionsheet isKindOfClass:[self.deleteAcction class]]) {
         
-        [self.tableView reloadData];
+    }
+    else if ([actionsheet isKindOfClass:[self.moreActionSheet class]]) {
         
-    });
-}
-
-- (void)dealloc{
-    [EVS_NotificationCenter removeObserver:self];
-}
-
-
-#pragma mark - EVSHomeVideoCellDelegate
-- (void)homeVideoCell:(EVSHomeVideoCell *)videoCell didSelectButton:(UIButton *)button indexPath:(NSIndexPath *)indexPath {
-    
-    switch (button.tag) {
-        case videoMoreButtonClicKPlayType:
-        {
-            LXLog(@"播放");LXLog(@"第%lu行",indexPath.row);
-            
-        }
-            break;
-            
-        case videoMoreButtonClicKLikeType:
-        {
-            LXLog(@"收藏");LXLog(@"第%lu行",indexPath.row);
-
-            button.selected = !button.selected;
-        }
-            break;
-            
-        case videoMoreButtonClicKCommentType:
-        {
-            LXLog(@"评论");LXLog(@"第%lu行",indexPath.row);
-
-        }
-            break;
-        case videoMoreButtonClicKShareType:
-        {
-            LXLog(@"分享");LXLog(@"第%lu行",indexPath.row);
+        if (buttonIndex == 0) {
+            //分享
             [self showShareView];
+        }
+        else if (buttonIndex == 1) {
+            //删除
             
         }
-            break;
-        case videoMoreButtonClicKMoreType:
+
+    }
+}
+
+
+#pragma mark - EVSUserInfoVideoCellDelegate
+- (void)userInfoVideoCell:(EVSUserInfoVideoCell *)videoCell didSelectMoreButton:(UIButton *)button {
+    
+    videoAuditType type = videoCell.videoAuditType;
+    
+    switch (type) {
+        case videoNoAuditingType:
+        case videoNoAuditUploadingType:
+        case videoNoAuditType:
         {
-            LXLog(@"更多");LXLog(@"第%lu行",indexPath.row);
-            [self showShareMoreView];
+            LX_Actionsheet *deleteAcction = [LX_Actionsheet sheetWithTitle:nil buttonTitles:@[@"删除"] redButtonIndex:-1 delegate:self];
+            self.deleteAcction = deleteAcction;
+            [deleteAcction show];
+
         }
             break;
+            
             
         default:
+        {
+            LX_Actionsheet *moreActionSheet = [LX_Actionsheet sheetWithTitle:nil buttonTitles:@[@"分享",@"删除"] redButtonIndex:-1 delegate:self];
+            self.moreActionSheet = moreActionSheet;
+            [moreActionSheet show];
+
+        }
+            
             break;
     }
-
-}
-
-- (void)homeVideoCell:(EVSHomeVideoCell *)videoCell didClickedHeadImg:(UITapGestureRecognizer *)tap indexPath:(NSIndexPath *)indexPath{
-    LXLog(@"点击了头像____第%lu行",indexPath.row);
     
-    EVSUserInfoViewController *userInfoVC = [[EVSUserInfoViewController alloc]init];
-    [self.navigationController pushViewController:userInfoVC animated:YES];
+    
     
 }
-
 #pragma mark - tableViewDelegate
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    EVSHomeVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:EVSHomeVideoCellID];
+    EVSUserInfoVideoCell *cell = [tableView dequeueReusableCellWithIdentifier:EVSUserInfoVideoCellID];
     cell.delegate = self;
-    cell.indexPath = indexPath;
+    cell.videoAuditType = videoNoAuditUploadSuccessType;
+    if (indexPath.row == 0) {
+        cell.videoAuditType = videoNoAuditType;
+    }
+    if (indexPath.row == 1) {
+        cell.videoAuditType = videoNoAuditUploadingType;
+    }
+    if (indexPath.row == 2) {
+        cell.videoAuditType = videoNoAuditingType;
+
+    }
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    EVSPlayVideoDetailController *playVideoVC = [EVSPlayVideoDetailController playVideoDetailVC];
-    [self.navigationController pushViewController:playVideoVC animated:YES];
+
+    
 }
 
+#pragma mark - actions
+- (void)rightButtonClicked {
+    LXLog(@"上传");
+}
 
-#pragma mark - lazyUI 
 
 #pragma mark - 分享
 - (void)showShareView {
@@ -150,7 +138,7 @@
     shareView = [self addShareContent:shareView];
     shareView.itemSpace = 20;
     [shareView showFromControlle:self];
-
+    
 }
 
 - (void)showShareMoreView {
@@ -164,7 +152,7 @@
     shareView = [self addShareContent:shareView];
     shareView.itemSpace = 20;
     [shareView showFromControlle:self];
-
+    
 }
 
 
@@ -202,26 +190,6 @@
     return _functionArray;
 }
 
-
-- (UITableView *)tableView{
-    if (!_tableView) {
-        
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        
-        _tableView.rowHeight = 220 *Y_HeightScale;
-        self.automaticallyAdjustsScrollViewInsets = NO;
-        
-        //注册cell
-        [_tableView registerClass:[EVSHomeVideoCell class] forCellReuseIdentifier:EVSHomeVideoCellID];
-        
-    }
-    
-    return _tableView;
-}
-
 #pragma mark - 测试分享
 //添加分享的内容
 - (LXShareView *)addShareContent:(LXShareView *)shareView{
@@ -231,5 +199,40 @@
     
     return shareView;
 }
+
+
+
+- (void)setUpNavBar {
+    self.titleText = @"我的视频";
+    self.backText = @"";
+    
+    [self setNavBarRightViewWithBtnText:@"上传" textColor:[AppConfig shareAppConfig].mainColor target:self action:@selector(rightButtonClicked)];
+}
+
+
+- (UITableView *)tableView{
+    if (!_tableView) {
+        
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
+        
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        
+        _tableView.separatorColor = kUIColorFromRGB(0xE6E6E6);
+        
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        
+        _tableView.rowHeight = 105;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        
+        //注册cell
+        [_tableView registerNib:[UINib nibWithNibName:NSStringFromClass([EVSUserInfoVideoCell class]) bundle:nil] forCellReuseIdentifier:EVSUserInfoVideoCellID];
+        
+        
+    }
+    
+    return _tableView;
+}
+
 
 @end

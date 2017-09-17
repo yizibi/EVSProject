@@ -8,12 +8,13 @@
 //
 
 #import "EVSRegisterViewController.h"
+#import "EVSRegisterNextViewController.h"
+
 
 @interface EVSRegisterViewController ()
 
 
 @property (weak, nonatomic) IBOutlet UIView *topContainView;
-
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
 @property (weak, nonatomic) IBOutlet UIButton *agreeButton;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
@@ -30,6 +31,8 @@
 
 - (IBAction)nextButtonClick:(UIButton *)sender {
     LXLog(@"下一步");
+    EVSRegisterNextViewController *registerNextVC = [[EVSRegisterNextViewController alloc] init];
+    [self.navigationController pushViewController:registerNextVC animated:YES];
 }
 
 

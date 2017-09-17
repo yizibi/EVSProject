@@ -7,31 +7,39 @@
 //
 
 #import "EVSForgetPassWordController.h"
+#import "EVSGetIdentifyCodeButton.h"
 
 @interface EVSForgetPassWordController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (weak, nonatomic) IBOutlet EVSGetIdentifyCodeButton *vertifyCode;
+@property (weak, nonatomic) IBOutlet UITextField *vertifyTextFiled;
+@property (weak, nonatomic) IBOutlet UITextField *setPassword;
+@property (weak, nonatomic) IBOutlet UITextField *setAgainPassword;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end
 
 @implementation EVSForgetPassWordController
+- (IBAction)nextButtonClick:(UIButton *)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+
+    self.titleText = @"忘记密码";
+    self.backText = @"";
+    
+    self.nextButton.layer.cornerRadius = 3;
+    self.nextButton.layer.masksToBounds = YES;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

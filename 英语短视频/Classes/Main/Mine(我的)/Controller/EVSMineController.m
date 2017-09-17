@@ -18,6 +18,10 @@
 #import "EVSLoginControllerViewController.h"
 #import "EVSNavgationController.h"
 
+#import "EVSUserInfoViewController.h"
+
+
+
 static NSString * const mineCellID = @"mineCellID";
 
 @interface EVSMineController ()<UITableViewDelegate,UITableViewDataSource,EVSMineHeadDelegate>
@@ -115,8 +119,14 @@ static NSString * const mineCellID = @"mineCellID";
 
 - (void)mineHeadViewDidTouched:(UIView *)headView{
     LXLogFunc;
+    
 }
 
+- (void)mineHeadViewDidTouchedHeadImgView {
+    EVSUserInfoViewController *userInfoVC = [[EVSUserInfoViewController alloc] init];
+    userInfoVC.userType = userTypeSelf;
+    [self.navigationController pushViewController:userInfoVC animated:YES];
+}
 
 #pragma mark - tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

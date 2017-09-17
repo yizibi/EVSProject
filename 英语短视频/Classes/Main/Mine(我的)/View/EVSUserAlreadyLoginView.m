@@ -100,6 +100,12 @@
         _head_ImageView.layer.cornerRadius = 30*Y_HeightScale;
         _head_ImageView.layer.masksToBounds = YES;
         _head_ImageView.image = [UIImage imageNamed:@"注册-头像"];
+        kweakSelf;
+        [_head_ImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithActionBlock:^(id sender) {
+            if ([weakSelf.delegate respondsToSelector:@selector(mineHeadViewDidTouchedHeadImgView)]) {
+                [weakSelf.delegate mineHeadViewDidTouchedHeadImgView];
+            }
+        }]];
     }
     return _head_ImageView;
 }

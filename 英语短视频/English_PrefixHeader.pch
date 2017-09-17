@@ -16,6 +16,7 @@
 #import "EVS_EnumDefines.h"
 #import "EVSConst.h"
 #import "EVS_DefineUrl.h"
+#import "LX_Singleton.h"
 
 //分类
 #import "UIView+LXFrame.h"
