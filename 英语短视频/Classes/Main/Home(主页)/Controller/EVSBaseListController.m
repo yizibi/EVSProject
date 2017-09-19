@@ -16,7 +16,6 @@
 #import "EVSUserInfoViewController.h"
 
 
-
 @interface EVSBaseListController ()<UITableViewDelegate,UITableViewDataSource,EVSHomeVideoCellDelegate>
 
 /** tableView */
@@ -117,6 +116,7 @@
     LXLog(@"点击了头像____第%lu行",indexPath.row);
     
     EVSUserInfoViewController *userInfoVC = [[EVSUserInfoViewController alloc]init];
+    userInfoVC.userType = userTypeOther;
     [self.navigationController pushViewController:userInfoVC animated:YES];
     
 }

@@ -20,6 +20,7 @@
 
 #import "EVSUserInfoViewController.h"
 
+#import "EVSUploadVideoViewController.h"// 上传视屏
 
 
 static NSString * const mineCellID = @"mineCellID";
@@ -172,7 +173,38 @@ static NSString * const mineCellID = @"mineCellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                EVSUploadVideoViewController *VC = [[EVSUploadVideoViewController alloc]init];
+                [self.navigationController pushViewController:VC animated:YES];
+            }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+            {
+                
+            }
+                break;
+            case 3:
+            {
+                
+            }
+                break;
+            case 4:
+            {
+                
+            }
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 
