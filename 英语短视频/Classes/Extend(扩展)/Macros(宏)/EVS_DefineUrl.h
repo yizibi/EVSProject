@@ -16,6 +16,9 @@
 #if ISDEBUG
 
 
+        #define APP_SERVER_BASE_URL          @"http://101.37.147.90:7070"
+
+
 #else
 
 

@@ -16,6 +16,7 @@
 #import "EVS_EnumDefines.h"
 #import "EVSConst.h"
 #import "EVS_DefineUrl.h"
+#import "LX_Singleton.h"
 
 //分类
 #import "UIView+LXFrame.h"
@@ -23,7 +24,15 @@
 #import "MBProgressHUD+LX_Extention.h"
 #import "UIViewController+LX_HUD.h"
 #import "UIGestureRecognizer+Extention.h"
+#import "UILabel+Extention.h"
+#import "NSString+LXExtention.h"
+#import "NSData+LX_Extention.h"
+#import "NSCalendar+LX_Extention.h"
 
+
+//网络
+#import "EVServerManger.h"
+#import "EVServerManger+LoginAndRegister.h"
 
 //第三方库
 #import <Masonry.h>
@@ -36,6 +45,10 @@
 #import <AFNetworking.h>
 #import <QiniuSDK.h>
 #import "SVProgressHUD.h"
+#import "UMSocialQQHandler.h"
+#import "UMSocialSinaHandler.h"
+#import "UMSocialWechatHandler.h"
+#import <UMSocialCore/UMSocialCore.h>
 
 
 

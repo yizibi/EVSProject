@@ -39,6 +39,26 @@ typedef NS_ENUM(NSInteger,videoMoreButtonClicKType) {
 
 };
 
+#pragma mark - 关注类型
+typedef NS_ENUM(NSInteger,attentionType) {
+    /** 关注 */
+    attentionUserType     = 0,
+    /** 已关注 */
+    attentionHaveType     = 1,
+    /** 相互关注 */
+    attentionEachotherType   = 2,
+    
+};
+
+#pragma mark - 用户类型
+typedef NS_ENUM(NSInteger,userType) {
+    /** 用户自己 */
+    userTypeSelf     = 0,
+    /** 别人 */
+    userTypeOther     = 1,
+    
+};
+
 
 
 #endif /* EVS_EnumDefines_h */

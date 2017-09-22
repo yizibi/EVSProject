@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EVSRegisterViewController">
+            <connections>
+                <outlet property="agreeButton" destination="hAD-zX-psm" id="1ZC-Hj-ZKk"/>
+                <outlet property="nextButton" destination="anM-pV-IOz" id="X7N-Nj-blK"/>
+                <outlet property="phoneNumber" destination="Tcv-Vd-Zeg" id="9NP-Hq-Hth"/>
+                <outlet property="topContainView" destination="iKw-VD-aNK" id="Nz5-WC-jru"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKw-VD-aNK">
+                    <rect key="frame" x="15" y="90" width="345" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 86" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-TJ-vOg">
+                            <rect key="frame" x="15" y="15.5" width="34.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Tcv-Vd-Zeg">
+                            <rect key="frame" x="64.5" y="5" width="265.5" height="40.5"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Tcv-Vd-Zeg" firstAttribute="leading" secondItem="ve2-TJ-vOg" secondAttribute="trailing" constant="15" id="34K-4V-JF1"/>
+                        <constraint firstItem="Tcv-Vd-Zeg" firstAttribute="centerY" secondItem="ve2-TJ-vOg" secondAttribute="centerY" id="EjH-jB-trW"/>
+                        <constraint firstItem="ve2-TJ-vOg" firstAttribute="leading" secondItem="iKw-VD-aNK" secondAttribute="leading" constant="15" id="TOt-Zf-4Qx"/>
+                        <constraint firstItem="Tcv-Vd-Zeg" firstAttribute="top" secondItem="iKw-VD-aNK" secondAttribute="top" constant="5" id="Yfj-jc-2OJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Tcv-Vd-Zeg" secondAttribute="trailing" constant="15" id="cXx-Fn-7oX"/>
+                        <constraint firstAttribute="height" constant="50" id="d4v-dg-LFO"/>
+                        <constraint firstItem="ve2-TJ-vOg" firstAttribute="centerY" secondItem="iKw-VD-aNK" secondAttribute="centerY" id="vLl-GZ-ehH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAD-zX-psm">
+                    <rect key="frame" x="110" y="155" width="155" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="同意《英语短视频协议》" image="注册-同意">
+                        <color key="titleColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="agreeButtonClicked:" destination="-1" eventType="touchUpInside" id="uuK-Re-Tkq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anM-pV-IOz">
+                    <rect key="frame" x="15" y="198" width="345" height="50"/>
+                    <color key="backgroundColor" red="0.2156862745" green="0.69019607839999997" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="H9M-p3-Y4p"/>
+                        <constraint firstAttribute="height" constant="50" id="zOS-2X-ur5"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" title="下一步"/>
+                    <connections>
+                        <action selector="nextButtonClick:" destination="-1" eventType="touchUpInside" id="L0q-hN-vcx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iKw-VD-aNK" secondAttribute="trailing" constant="15" id="1NO-Nr-uE9"/>
+                <constraint firstItem="hAD-zX-psm" firstAttribute="top" secondItem="iKw-VD-aNK" secondAttribute="bottom" constant="15" id="55i-y1-gm5"/>
+                <constraint firstItem="anM-pV-IOz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Kg6-qH-OeJ"/>
+                <constraint firstAttribute="trailing" secondItem="hAD-zX-psm" secondAttribute="trailing" constant="110" id="LKh-Jg-VVV"/>
+                <constraint firstItem="iKw-VD-aNK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="OmX-4R-rhq"/>
+                <constraint firstItem="hAD-zX-psm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="110" id="brC-4P-rv5"/>
+                <constraint firstItem="iKw-VD-aNK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="kPy-R2-HK9"/>
+                <constraint firstItem="anM-pV-IOz" firstAttribute="top" secondItem="hAD-zX-psm" secondAttribute="bottom" constant="28" id="mX3-s1-fm9"/>
+                <constraint firstAttribute="trailing" secondItem="anM-pV-IOz" secondAttribute="trailing" constant="15" id="tw9-5p-bKu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="注册-同意" width="15" height="15"/>
+    </resources>
+</document>

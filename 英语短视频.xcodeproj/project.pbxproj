@@ -28,6 +28,11 @@
 		3C2A3F981F5A882200CB8557 /* LXShareItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3F971F5A882200CB8557 /* LXShareItemCell.m */; };
 		3C2A3F9B1F5A883400CB8557 /* LXShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3F9A1F5A883400CB8557 /* LXShareView.m */; };
 		3C2A3FA11F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */; };
+		3C2A3FA41F5ECCE000CB8557 /* EVSPlayVideoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FA31F5ECCE000CB8557 /* EVSPlayVideoDetailController.m */; };
+		3C2A3FA71F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FA61F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m */; };
+		3C2A3FAA1F5ED71F00CB8557 /* UILabel+Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FA91F5ED71F00CB8557 /* UILabel+Extention.m */; };
+		3C2A3FAE1F5EE15B00CB8557 /* EVSRecommendVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2A3FAC1F5EE15B00CB8557 /* EVSRecommendVideoCell.m */; };
+		3C2A3FAF1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2A3FAD1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib */; };
 		3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61B1F4C652F0073CBEA /* EVSMineController.m */; };
 		3C49A61F1F4C6DFA0073CBEA /* EVS_MineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C49A61E1F4C6DFA0073CBEA /* EVS_MineCell.m */; };
 		3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94040B1F52A3B7008E523F /* EVSMineHeadView.m */; };
@@ -59,8 +64,49 @@
 		3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C94046A1F58566F008E523F /* LXUnityclass.m */; };
 		3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404701F585760008E523F /* LXQiniuUploadManger.m */; };
 		3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9404731F5857B8008E523F /* LXUploadTool.m */; };
+		3CFC4DC11F6B502F00A8B5CC /* EVSForgetPassWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */; };
+		3CFC4DC21F6B502F00A8B5CC /* EVSForgetPassWordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */; };
+		3CFC4DC31F6B502F00A8B5CC /* EVSLoginControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */; };
+		3CFC4DC41F6B502F00A8B5CC /* EVSLoginControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */; };
+		3CFC4DC51F6B502F00A8B5CC /* EVSRegisterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */; };
+		3CFC4DC61F6B502F00A8B5CC /* EVSRegisterNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */; };
+		3CFC4DC71F6B502F00A8B5CC /* EVSRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */; };
+		3CFC4DC81F6B502F00A8B5CC /* EVSRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */; };
+		3CFC4DCB1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */; };
+		3CFC4DCE1F6C1DAA00A8B5CC /* EVSUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DCD1F6C1DAA00A8B5CC /* EVSUserInfoViewController.m */; };
+		3CFC4DD21F6C20A200A8B5CC /* EVSUserInfoVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DD01F6C20A200A8B5CC /* EVSUserInfoVideoCell.m */; };
+		3CFC4DD31F6C20A200A8B5CC /* EVSUserInfoVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DD11F6C20A200A8B5CC /* EVSUserInfoVideoCell.xib */; };
+		3CFC4DD61F6CBBD100A8B5CC /* EVSUserInfoHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DD51F6CBBD100A8B5CC /* EVSUserInfoHeadView.m */; };
+		3CFC4DD91F6D03FA00A8B5CC /* EVSCustomTwoLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DD81F6D03FA00A8B5CC /* EVSCustomTwoLineView.m */; };
+		3CFC4DDD1F6D2ED400A8B5CC /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DDC1F6D2ED400A8B5CC /* AppConfig.m */; };
+		3CFC4DE01F6D31A400A8B5CC /* EVSFansListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DDF1F6D31A400A8B5CC /* EVSFansListController.m */; };
+		3CFC4DE41F6D32CC00A8B5CC /* EVSFansOrAttentionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DE21F6D32CC00A8B5CC /* EVSFansOrAttentionCell.m */; };
+		3CFC4DE51F6D32CC00A8B5CC /* EVSFansOrAttentionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC4DE31F6D32CC00A8B5CC /* EVSFansOrAttentionCell.xib */; };
+		3CFC4DE81F6D386600A8B5CC /* EVSAttentionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DE71F6D386600A8B5CC /* EVSAttentionListController.m */; };
+		3CFC4DEB1F6EBA6000A8B5CC /* LX_Actionsheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DEA1F6EBA6000A8B5CC /* LX_Actionsheet.m */; };
+		3CFC4DEE1F6EBDD500A8B5CC /* EVSUserVideoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DED1F6EBDD500A8B5CC /* EVSUserVideoListController.m */; };
+		3CFC4DF11F71547700A8B5CC /* EVSHotSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DF01F71547700A8B5CC /* EVSHotSearchCell.m */; };
+		3CFC4DF41F71570500A8B5CC /* EVSHotSearchFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DF31F71570500A8B5CC /* EVSHotSearchFooterView.m */; };
+		3CFC4DF71F715E4B00A8B5CC /* EVSHotSearchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC4DF61F715E4B00A8B5CC /* EVSHotSearchButton.m */; };
+		9D077E7A1F70D6BA000A2A6C /* EVServerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D077E791F70D6BA000A2A6C /* EVServerManger.m */; };
+		9D077E7D1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D077E7C1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.m */; };
+		9D1245931F75196A00AAAECA /* EVServerManger+EVSHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1245921F75196A00AAAECA /* EVServerManger+EVSHome.m */; };
+		9D1245961F7519A700AAAECA /* EVServerManger+EVSMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1245951F7519A700AAAECA /* EVServerManger+EVSMine.m */; };
+		9D1245DE1F751C0800AAAECA /* UMSocialSDKPromptResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D1245D81F751BDB00AAAECA /* UMSocialSDKPromptResources.bundle */; };
+		9D1245DF1F751C0800AAAECA /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D1245DC1F751BDB00AAAECA /* UMSocialSDKResources.bundle */; };
+		9D1245E11F751C7200AAAECA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1245E01F751C7200AAAECA /* libsqlite3.tbd */; };
+		9D1245E31F751C7900AAAECA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1245E21F751C7900AAAECA /* CoreGraphics.framework */; };
+		9D1245E41F751DCC00AAAECA /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1245D61F751BDB00AAAECA /* UMSocialCore.framework */; };
+		9D1245E51F751DCC00AAAECA /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1245D71F751BDB00AAAECA /* UMSocialNetwork.framework */; };
+		9D1245E61F751DCC00AAAECA /* UMSocialSDKPromptResources.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1245D81F751BDB00AAAECA /* UMSocialSDKPromptResources.bundle */; };
+		9D1245EA1F75254200AAAECA /* NSString+LXExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1245E91F75254200AAAECA /* NSString+LXExtention.m */; };
+		9D1245EF1F753C3700AAAECA /* NSData+LX_Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1245ED1F753C3700AAAECA /* NSData+LX_Extention.m */; };
+		9D1245F01F753C3700AAAECA /* NSCalendar+LX_Extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1245EE1F753C3700AAAECA /* NSCalendar+LX_Extention.m */; };
 		B9DC5A8CC7AE5692257DE02F /* libPods-英语短视频UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */; };
 		BCEBC3CDB90707828A53E326 /* libPods-英语短视频Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */; };
+		BE3D8E861F6FE84C003D925A /* EVSMyMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3D8E7B1F6FE84C003D925A /* EVSMyMessageViewController.m */; };
+		BE3D8E871F6FE84C003D925A /* EVSUploadVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3D8E811F6FE84C003D925A /* EVSUploadVideoViewController.m */; };
+		BE3D8E881F6FE84C003D925A /* EVSUploadVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3D8E851F6FE84C003D925A /* EVSUploadVideoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +174,15 @@
 		3C2A3F9A1F5A883400CB8557 /* LXShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXShareView.m; sourceTree = "<group>"; };
 		3C2A3F9F1F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Extention.h"; sourceTree = "<group>"; };
 		3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Extention.m"; sourceTree = "<group>"; };
+		3C2A3FA21F5ECCE000CB8557 /* EVSPlayVideoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSPlayVideoDetailController.h; sourceTree = "<group>"; };
+		3C2A3FA31F5ECCE000CB8557 /* EVSPlayVideoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSPlayVideoDetailController.m; sourceTree = "<group>"; };
+		3C2A3FA51F5ED60B00CB8557 /* EVSVideoInfoTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSVideoInfoTitleCell.h; sourceTree = "<group>"; };
+		3C2A3FA61F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSVideoInfoTitleCell.m; sourceTree = "<group>"; };
+		3C2A3FA81F5ED71F00CB8557 /* UILabel+Extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extention.h"; sourceTree = "<group>"; };
+		3C2A3FA91F5ED71F00CB8557 /* UILabel+Extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extention.m"; sourceTree = "<group>"; };
+		3C2A3FAB1F5EE15B00CB8557 /* EVSRecommendVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRecommendVideoCell.h; sourceTree = "<group>"; };
+		3C2A3FAC1F5EE15B00CB8557 /* EVSRecommendVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRecommendVideoCell.m; sourceTree = "<group>"; };
+		3C2A3FAD1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSRecommendVideoCell.xib; sourceTree = "<group>"; };
 		3C49A61A1F4C652F0073CBEA /* EVSMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMineController.h; sourceTree = "<group>"; };
 		3C49A61B1F4C652F0073CBEA /* EVSMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMineController.m; sourceTree = "<group>"; };
 		3C49A61D1F4C6DFA0073CBEA /* EVS_MineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVS_MineCell.h; sourceTree = "<group>"; };
@@ -192,11 +247,89 @@
 		3C9404701F585760008E523F /* LXQiniuUploadManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXQiniuUploadManger.m; sourceTree = "<group>"; };
 		3C9404721F5857B8008E523F /* LXUploadTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXUploadTool.h; sourceTree = "<group>"; };
 		3C9404731F5857B8008E523F /* LXUploadTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXUploadTool.m; sourceTree = "<group>"; };
+		3CFC4DB51F6B502F00A8B5CC /* EVSForgetPassWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSForgetPassWordController.h; sourceTree = "<group>"; };
+		3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSForgetPassWordController.m; sourceTree = "<group>"; };
+		3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSForgetPassWordController.xib; sourceTree = "<group>"; };
+		3CFC4DB81F6B502F00A8B5CC /* EVSLoginControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSLoginControllerViewController.h; sourceTree = "<group>"; };
+		3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSLoginControllerViewController.m; sourceTree = "<group>"; };
+		3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSLoginControllerViewController.xib; sourceTree = "<group>"; };
+		3CFC4DBB1F6B502F00A8B5CC /* EVSRegisterNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRegisterNextViewController.h; sourceTree = "<group>"; };
+		3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRegisterNextViewController.m; sourceTree = "<group>"; };
+		3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSRegisterNextViewController.xib; sourceTree = "<group>"; };
+		3CFC4DBE1F6B502F00A8B5CC /* EVSRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSRegisterViewController.h; sourceTree = "<group>"; };
+		3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSRegisterViewController.m; sourceTree = "<group>"; };
+		3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSRegisterViewController.xib; sourceTree = "<group>"; };
+		3CFC4DC91F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSGetIdentifyCodeButton.h; sourceTree = "<group>"; };
+		3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSGetIdentifyCodeButton.m; sourceTree = "<group>"; };
+		3CFC4DCC1F6C1DAA00A8B5CC /* EVSUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserInfoViewController.h; sourceTree = "<group>"; };
+		3CFC4DCD1F6C1DAA00A8B5CC /* EVSUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserInfoViewController.m; sourceTree = "<group>"; };
+		3CFC4DCF1F6C20A200A8B5CC /* EVSUserInfoVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserInfoVideoCell.h; sourceTree = "<group>"; };
+		3CFC4DD01F6C20A200A8B5CC /* EVSUserInfoVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserInfoVideoCell.m; sourceTree = "<group>"; };
+		3CFC4DD11F6C20A200A8B5CC /* EVSUserInfoVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSUserInfoVideoCell.xib; sourceTree = "<group>"; };
+		3CFC4DD41F6CBBD100A8B5CC /* EVSUserInfoHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserInfoHeadView.h; sourceTree = "<group>"; };
+		3CFC4DD51F6CBBD100A8B5CC /* EVSUserInfoHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserInfoHeadView.m; sourceTree = "<group>"; };
+		3CFC4DD71F6D03FA00A8B5CC /* EVSCustomTwoLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSCustomTwoLineView.h; sourceTree = "<group>"; };
+		3CFC4DD81F6D03FA00A8B5CC /* EVSCustomTwoLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSCustomTwoLineView.m; sourceTree = "<group>"; };
+		3CFC4DDA1F6D2EA400A8B5CC /* LX_Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LX_Singleton.h; sourceTree = "<group>"; };
+		3CFC4DDB1F6D2ED400A8B5CC /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		3CFC4DDC1F6D2ED400A8B5CC /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		3CFC4DDE1F6D31A400A8B5CC /* EVSFansListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSFansListController.h; sourceTree = "<group>"; };
+		3CFC4DDF1F6D31A400A8B5CC /* EVSFansListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSFansListController.m; sourceTree = "<group>"; };
+		3CFC4DE11F6D32CC00A8B5CC /* EVSFansOrAttentionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSFansOrAttentionCell.h; sourceTree = "<group>"; };
+		3CFC4DE21F6D32CC00A8B5CC /* EVSFansOrAttentionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSFansOrAttentionCell.m; sourceTree = "<group>"; };
+		3CFC4DE31F6D32CC00A8B5CC /* EVSFansOrAttentionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVSFansOrAttentionCell.xib; sourceTree = "<group>"; };
+		3CFC4DE61F6D386600A8B5CC /* EVSAttentionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSAttentionListController.h; sourceTree = "<group>"; };
+		3CFC4DE71F6D386600A8B5CC /* EVSAttentionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSAttentionListController.m; sourceTree = "<group>"; };
+		3CFC4DE91F6EBA6000A8B5CC /* LX_Actionsheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LX_Actionsheet.h; sourceTree = "<group>"; };
+		3CFC4DEA1F6EBA6000A8B5CC /* LX_Actionsheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LX_Actionsheet.m; sourceTree = "<group>"; };
+		3CFC4DEC1F6EBDD500A8B5CC /* EVSUserVideoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUserVideoListController.h; sourceTree = "<group>"; };
+		3CFC4DED1F6EBDD500A8B5CC /* EVSUserVideoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUserVideoListController.m; sourceTree = "<group>"; };
+		3CFC4DEF1F71547700A8B5CC /* EVSHotSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSHotSearchCell.h; sourceTree = "<group>"; };
+		3CFC4DF01F71547700A8B5CC /* EVSHotSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHotSearchCell.m; sourceTree = "<group>"; };
+		3CFC4DF21F71570500A8B5CC /* EVSHotSearchFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSHotSearchFooterView.h; sourceTree = "<group>"; };
+		3CFC4DF31F71570500A8B5CC /* EVSHotSearchFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHotSearchFooterView.m; sourceTree = "<group>"; };
+		3CFC4DF51F715E4B00A8B5CC /* EVSHotSearchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSHotSearchButton.h; sourceTree = "<group>"; };
+		3CFC4DF61F715E4B00A8B5CC /* EVSHotSearchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSHotSearchButton.m; sourceTree = "<group>"; };
 		4ED439BF475D392031E618F4 /* Pods-英语短视频UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6E2536A2D9061735EDBCCA92 /* Pods-英语短视频Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频Tests/Pods-英语短视频Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D077E781F70D6BA000A2A6C /* EVServerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVServerManger.h; sourceTree = "<group>"; };
+		9D077E791F70D6BA000A2A6C /* EVServerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVServerManger.m; sourceTree = "<group>"; };
+		9D077E7B1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EVServerManger+LoginAndRegister.h"; sourceTree = "<group>"; };
+		9D077E7C1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EVServerManger+LoginAndRegister.m"; sourceTree = "<group>"; };
+		9D1245911F75196A00AAAECA /* EVServerManger+EVSHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EVServerManger+EVSHome.h"; sourceTree = "<group>"; };
+		9D1245921F75196A00AAAECA /* EVServerManger+EVSHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EVServerManger+EVSHome.m"; sourceTree = "<group>"; };
+		9D1245941F7519A700AAAECA /* EVServerManger+EVSMine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EVServerManger+EVSMine.h"; sourceTree = "<group>"; };
+		9D1245951F7519A700AAAECA /* EVServerManger+EVSMine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EVServerManger+EVSMine.m"; sourceTree = "<group>"; };
+		9D1245CD1F751BDB00AAAECA /* libSocialQQ.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialQQ.a; sourceTree = "<group>"; };
+		9D1245CE1F751BDB00AAAECA /* UMSocialQQHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMSocialQQHandler.h; sourceTree = "<group>"; };
+		9D1245D01F751BDB00AAAECA /* libSocialSina.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSina.a; sourceTree = "<group>"; };
+		9D1245D11F751BDB00AAAECA /* UMSocialSinaHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMSocialSinaHandler.h; sourceTree = "<group>"; };
+		9D1245D31F751BDB00AAAECA /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		9D1245D41F751BDB00AAAECA /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		9D1245D61F751BDB00AAAECA /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		9D1245D71F751BDB00AAAECA /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		9D1245D81F751BDB00AAAECA /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		9D1245DA1F751BDB00AAAECA /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		9D1245DC1F751BDB00AAAECA /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		9D1245DD1F751BDB00AAAECA /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		9D1245E01F751C7200AAAECA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D1245E21F751C7900AAAECA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D1245E71F75220600AAAECA /* EVS_BaseDefineUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVS_BaseDefineUrl.h; sourceTree = "<group>"; };
+		9D1245E81F75254200AAAECA /* NSString+LXExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LXExtention.h"; sourceTree = "<group>"; };
+		9D1245E91F75254200AAAECA /* NSString+LXExtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXExtention.m"; sourceTree = "<group>"; };
+		9D1245EB1F753C3700AAAECA /* NSData+LX_Extention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+LX_Extention.h"; sourceTree = "<group>"; };
+		9D1245EC1F753C3700AAAECA /* NSCalendar+LX_Extention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+LX_Extention.h"; sourceTree = "<group>"; };
+		9D1245ED1F753C3700AAAECA /* NSData+LX_Extention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+LX_Extention.m"; sourceTree = "<group>"; };
+		9D1245EE1F753C3700AAAECA /* NSCalendar+LX_Extention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+LX_Extention.m"; sourceTree = "<group>"; };
 		AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-英语短视频UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DFB79C30ECA1DC25D05A0D /* Pods-英语短视频UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-英语短视频UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-英语短视频UITests/Pods-英语短视频UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE3D8E7A1F6FE84C003D925A /* EVSMyMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSMyMessageViewController.h; sourceTree = "<group>"; };
+		BE3D8E7B1F6FE84C003D925A /* EVSMyMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSMyMessageViewController.m; sourceTree = "<group>"; };
+		BE3D8E801F6FE84C003D925A /* EVSUploadVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUploadVideoViewController.h; sourceTree = "<group>"; };
+		BE3D8E811F6FE84C003D925A /* EVSUploadVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUploadVideoViewController.m; sourceTree = "<group>"; };
+		BE3D8E841F6FE84C003D925A /* EVSUploadVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVSUploadVideoTableViewCell.h; sourceTree = "<group>"; };
+		BE3D8E851F6FE84C003D925A /* EVSUploadVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVSUploadVideoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +337,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1245E41F751DCC00AAAECA /* UMSocialCore.framework in Frameworks */,
+				9D1245E51F751DCC00AAAECA /* UMSocialNetwork.framework in Frameworks */,
+				9D1245E61F751DCC00AAAECA /* UMSocialSDKPromptResources.bundle in Frameworks */,
+				9D1245E31F751C7900AAAECA /* CoreGraphics.framework in Frameworks */,
+				9D1245E11F751C7200AAAECA /* libsqlite3.tbd in Frameworks */,
 				3B0A0C8D2DE927E4808FE470 /* libPods-英语短视频.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +483,14 @@
 				3C94041A1F52A681008E523F /* UIImage+LX_Extend.m */,
 				3C2A3F9F1F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.h */,
 				3C2A3FA01F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m */,
+				3C2A3FA81F5ED71F00CB8557 /* UILabel+Extention.h */,
+				3C2A3FA91F5ED71F00CB8557 /* UILabel+Extention.m */,
+				9D1245E81F75254200AAAECA /* NSString+LXExtention.h */,
+				9D1245E91F75254200AAAECA /* NSString+LXExtention.m */,
+				9D1245EC1F753C3700AAAECA /* NSCalendar+LX_Extention.h */,
+				9D1245EE1F753C3700AAAECA /* NSCalendar+LX_Extention.m */,
+				9D1245EB1F753C3700AAAECA /* NSData+LX_Extention.h */,
+				9D1245ED1F753C3700AAAECA /* NSData+LX_Extention.m */,
 			);
 			path = "Category(分类)";
 			sourceTree = "<group>";
@@ -352,6 +498,8 @@
 		300CAEAF1F4A8EF700BB967E /* Config(配置) */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DDB1F6D2ED400A8B5CC /* AppConfig.h */,
+				3CFC4DDC1F6D2ED400A8B5CC /* AppConfig.m */,
 			);
 			path = "Config(配置)";
 			sourceTree = "<group>";
@@ -368,8 +516,10 @@
 		300CAEB11F4A8EF700BB967E /* Macros(宏) */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DDA1F6D2EA400A8B5CC /* LX_Singleton.h */,
 				300CAED81F4AA76D00BB967E /* EVS_Macro.h */,
 				300CAED91F4AA7A200BB967E /* EVS_DefineUrl.h */,
+				9D1245E71F75220600AAAECA /* EVS_BaseDefineUrl.h */,
 				3C94042C1F52A897008E523F /* EVS_EnumDefines.h */,
 			);
 			path = "Macros(宏)";
@@ -387,10 +537,10 @@
 		300CAEB31F4A8EF700BB967E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				300CAECE1F4AA4FC00BB967E /* Service(服务接口) */,
 				3C94043F1F571121008E523F /* ThirdLib(第三方库) */,
 				300CAEB81F4A8EF700BB967E /* Mine(我的) */,
 				300CAEB41F4A8EF700BB967E /* Home(主页) */,
-				300CAECE1F4AA4FC00BB967E /* Service(服务接口) */,
 				300CAEBD1F4AA4F100BB967E /* Other(其他) */,
 			);
 			path = Main;
@@ -411,10 +561,20 @@
 			children = (
 				300CAEDA1F4AA93C00BB967E /* EVSHomeController.h */,
 				300CAEDB1F4AA93C00BB967E /* EVSHomeController.m */,
-				3C94043C1F530590008E523F /* EVSBaseListController.h */,
-				3C94043D1F530590008E523F /* EVSBaseListController.m */,
 				3C18C19C1F599B81003E7D27 /* EVSearchViewController.h */,
 				3C18C19D1F599B81003E7D27 /* EVSearchViewController.m */,
+				3C94043C1F530590008E523F /* EVSBaseListController.h */,
+				3C94043D1F530590008E523F /* EVSBaseListController.m */,
+				3CFC4DCC1F6C1DAA00A8B5CC /* EVSUserInfoViewController.h */,
+				3CFC4DCD1F6C1DAA00A8B5CC /* EVSUserInfoViewController.m */,
+				3CFC4DDE1F6D31A400A8B5CC /* EVSFansListController.h */,
+				3CFC4DDF1F6D31A400A8B5CC /* EVSFansListController.m */,
+				3CFC4DE61F6D386600A8B5CC /* EVSAttentionListController.h */,
+				3CFC4DE71F6D386600A8B5CC /* EVSAttentionListController.m */,
+				3CFC4DEC1F6EBDD500A8B5CC /* EVSUserVideoListController.h */,
+				3CFC4DED1F6EBDD500A8B5CC /* EVSUserVideoListController.m */,
+				3C2A3FA21F5ECCE000CB8557 /* EVSPlayVideoDetailController.h */,
+				3C2A3FA31F5ECCE000CB8557 /* EVSPlayVideoDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +589,27 @@
 		300CAEB71F4A8EF700BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C2A3FA51F5ED60B00CB8557 /* EVSVideoInfoTitleCell.h */,
+				3C2A3FA61F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m */,
+				3CFC4DEF1F71547700A8B5CC /* EVSHotSearchCell.h */,
+				3CFC4DF01F71547700A8B5CC /* EVSHotSearchCell.m */,
+				3CFC4DF21F71570500A8B5CC /* EVSHotSearchFooterView.h */,
+				3CFC4DF31F71570500A8B5CC /* EVSHotSearchFooterView.m */,
+				3CFC4DF51F715E4B00A8B5CC /* EVSHotSearchButton.h */,
+				3CFC4DF61F715E4B00A8B5CC /* EVSHotSearchButton.m */,
+				3CFC4DE11F6D32CC00A8B5CC /* EVSFansOrAttentionCell.h */,
+				3CFC4DE21F6D32CC00A8B5CC /* EVSFansOrAttentionCell.m */,
+				3CFC4DE31F6D32CC00A8B5CC /* EVSFansOrAttentionCell.xib */,
+				3CFC4DD41F6CBBD100A8B5CC /* EVSUserInfoHeadView.h */,
+				3CFC4DD51F6CBBD100A8B5CC /* EVSUserInfoHeadView.m */,
+				3CFC4DD71F6D03FA00A8B5CC /* EVSCustomTwoLineView.h */,
+				3CFC4DD81F6D03FA00A8B5CC /* EVSCustomTwoLineView.m */,
+				3CFC4DCF1F6C20A200A8B5CC /* EVSUserInfoVideoCell.h */,
+				3CFC4DD01F6C20A200A8B5CC /* EVSUserInfoVideoCell.m */,
+				3CFC4DD11F6C20A200A8B5CC /* EVSUserInfoVideoCell.xib */,
+				3C2A3FAB1F5EE15B00CB8557 /* EVSRecommendVideoCell.h */,
+				3C2A3FAC1F5EE15B00CB8557 /* EVSRecommendVideoCell.m */,
+				3C2A3FAD1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib */,
 				306554501F552D1400427638 /* EVSHomeVideoCell.h */,
 				306554511F552D1400427638 /* EVSHomeVideoCell.m */,
 			);
@@ -438,6 +619,8 @@
 		300CAEB81F4A8EF700BB967E /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
+				BE3D8E781F6FE84C003D925A /* 我的消息 */,
+				BE3D8E7E1F6FE84C003D925A /* 上传视屏 */,
 				300CAEB91F4A8EF700BB967E /* Controller */,
 				300CAEBA1F4A8EF700BB967E /* Model */,
 				300CAEBB1F4A8EF700BB967E /* View */,
@@ -480,9 +663,9 @@
 		300CAEBD1F4AA4F100BB967E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				9D1245971F751A5F00AAAECA /* Guide(引导页) */,
 				306554491F55226C00427638 /* TdLibConfig(三方配置) */,
 				300CAEBE1F4AA4F100BB967E /* Base(基类) */,
-				300CAEC21F4AA4F100BB967E /* Guide(引导页) */,
 				300CAEC61F4AA4F100BB967E /* Login&Register(登录注册) */,
 				300CAECA1F4AA4F100BB967E /* Navgation(导航) */,
 			);
@@ -519,41 +702,12 @@
 		300CAEC11F4AA4F100BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DE91F6EBA6000A8B5CC /* LX_Actionsheet.h */,
+				3CFC4DEA1F6EBA6000A8B5CC /* LX_Actionsheet.m */,
 				300CAEDD1F4AA9AD00BB967E /* LX_CustomNavBarView.h */,
 				300CAEDE1F4AA9AD00BB967E /* LX_CustomNavBarView.m */,
 				306554531F552E5300427638 /* EVSCommonButton.h */,
 				306554541F552E5300427638 /* EVSCommonButton.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		300CAEC21F4AA4F100BB967E /* Guide(引导页) */ = {
-			isa = PBXGroup;
-			children = (
-				300CAEC31F4AA4F100BB967E /* Controller */,
-				300CAEC41F4AA4F100BB967E /* Model */,
-				300CAEC51F4AA4F100BB967E /* View */,
-			);
-			path = "Guide(引导页)";
-			sourceTree = "<group>";
-		};
-		300CAEC31F4AA4F100BB967E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		300CAEC41F4AA4F100BB967E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		300CAEC51F4AA4F100BB967E /* View */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -571,6 +725,18 @@
 		300CAEC71F4AA4F100BB967E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DB81F6B502F00A8B5CC /* EVSLoginControllerViewController.h */,
+				3CFC4DB91F6B502F00A8B5CC /* EVSLoginControllerViewController.m */,
+				3CFC4DBA1F6B502F00A8B5CC /* EVSLoginControllerViewController.xib */,
+				3CFC4DBE1F6B502F00A8B5CC /* EVSRegisterViewController.h */,
+				3CFC4DBF1F6B502F00A8B5CC /* EVSRegisterViewController.m */,
+				3CFC4DC01F6B502F00A8B5CC /* EVSRegisterViewController.xib */,
+				3CFC4DBB1F6B502F00A8B5CC /* EVSRegisterNextViewController.h */,
+				3CFC4DBC1F6B502F00A8B5CC /* EVSRegisterNextViewController.m */,
+				3CFC4DBD1F6B502F00A8B5CC /* EVSRegisterNextViewController.xib */,
+				3CFC4DB51F6B502F00A8B5CC /* EVSForgetPassWordController.h */,
+				3CFC4DB61F6B502F00A8B5CC /* EVSForgetPassWordController.m */,
+				3CFC4DB71F6B502F00A8B5CC /* EVSForgetPassWordController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -585,6 +751,8 @@
 		300CAEC91F4AA4F100BB967E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC4DC91F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.h */,
+				3CFC4DCA1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -625,6 +793,7 @@
 		300CAECE1F4AA4FC00BB967E /* Service(服务接口) */ = {
 			isa = PBXGroup;
 			children = (
+				9D077E741F70D676000A2A6C /* APIManger */,
 				3C94046E1F585741008E523F /* BaseUploadHelper */,
 				3C9404631F58566F008E523F /* BaseServiceLib */,
 			);
@@ -688,6 +857,7 @@
 		3C94043F1F571121008E523F /* ThirdLib(第三方库) */ = {
 			isa = PBXGroup;
 			children = (
+				9D1245CA1F751BDB00AAAECA /* UM */,
 				3C9404591F585396008E523F /* SVProgressHUD */,
 				3C9404401F571121008E523F /* WMPlayer */,
 			);
@@ -758,11 +928,202 @@
 		994E0B879E41887E64C83214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D1245E21F751C7900AAAECA /* CoreGraphics.framework */,
+				9D1245E01F751C7200AAAECA /* libsqlite3.tbd */,
 				01AFB97D9427A6EE41B3EE99 /* libPods-英语短视频.a */,
 				7D80232750A920C7EAC78F20 /* libPods-英语短视频Tests.a */,
 				AB97A8399A98E576208E0524 /* libPods-英语短视频UITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D077E741F70D676000A2A6C /* APIManger */ = {
+			isa = PBXGroup;
+			children = (
+				9D077E781F70D6BA000A2A6C /* EVServerManger.h */,
+				9D077E791F70D6BA000A2A6C /* EVServerManger.m */,
+				9D077E7B1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.h */,
+				9D077E7C1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.m */,
+				9D1245911F75196A00AAAECA /* EVServerManger+EVSHome.h */,
+				9D1245921F75196A00AAAECA /* EVServerManger+EVSHome.m */,
+				9D1245941F7519A700AAAECA /* EVServerManger+EVSMine.h */,
+				9D1245951F7519A700AAAECA /* EVServerManger+EVSMine.m */,
+			);
+			path = APIManger;
+			sourceTree = "<group>";
+		};
+		9D1245971F751A5F00AAAECA /* Guide(引导页) */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245981F751A5F00AAAECA /* Controller */,
+				9D1245991F751A5F00AAAECA /* Model */,
+				9D12459A1F751A5F00AAAECA /* View */,
+			);
+			path = "Guide(引导页)";
+			sourceTree = "<group>";
+		};
+		9D1245981F751A5F00AAAECA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9D1245991F751A5F00AAAECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D12459A1F751A5F00AAAECA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D1245CA1F751BDB00AAAECA /* UM */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245CB1F751BDB00AAAECA /* SocialLibraries */,
+				9D1245D51F751BDB00AAAECA /* UMSocialSDK */,
+				9D1245D91F751BDB00AAAECA /* UMSocialSDKPlugin */,
+				9D1245DB1F751BDB00AAAECA /* UMSocialUI */,
+			);
+			path = UM;
+			sourceTree = "<group>";
+		};
+		9D1245CB1F751BDB00AAAECA /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245CC1F751BDB00AAAECA /* QQ */,
+				9D1245CF1F751BDB00AAAECA /* Sina */,
+				9D1245D21F751BDB00AAAECA /* WeChat */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		9D1245CC1F751BDB00AAAECA /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245CD1F751BDB00AAAECA /* libSocialQQ.a */,
+				9D1245CE1F751BDB00AAAECA /* UMSocialQQHandler.h */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		9D1245CF1F751BDB00AAAECA /* Sina */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245D01F751BDB00AAAECA /* libSocialSina.a */,
+				9D1245D11F751BDB00AAAECA /* UMSocialSinaHandler.h */,
+			);
+			path = Sina;
+			sourceTree = "<group>";
+		};
+		9D1245D21F751BDB00AAAECA /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245D31F751BDB00AAAECA /* libSocialWeChat.a */,
+				9D1245D41F751BDB00AAAECA /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		9D1245D51F751BDB00AAAECA /* UMSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245D61F751BDB00AAAECA /* UMSocialCore.framework */,
+				9D1245D71F751BDB00AAAECA /* UMSocialNetwork.framework */,
+				9D1245D81F751BDB00AAAECA /* UMSocialSDKPromptResources.bundle */,
+			);
+			path = UMSocialSDK;
+			sourceTree = "<group>";
+		};
+		9D1245D91F751BDB00AAAECA /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245DA1F751BDB00AAAECA /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		9D1245DB1F751BDB00AAAECA /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				9D1245DC1F751BDB00AAAECA /* UMSocialSDKResources.bundle */,
+				9D1245DD1F751BDB00AAAECA /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		BE3D8E781F6FE84C003D925A /* 我的消息 */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D8E791F6FE84C003D925A /* Controller */,
+				BE3D8E7C1F6FE84C003D925A /* Model */,
+				BE3D8E7D1F6FE84C003D925A /* View */,
+			);
+			path = "我的消息";
+			sourceTree = "<group>";
+		};
+		BE3D8E791F6FE84C003D925A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D8E7A1F6FE84C003D925A /* EVSMyMessageViewController.h */,
+				BE3D8E7B1F6FE84C003D925A /* EVSMyMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE3D8E7C1F6FE84C003D925A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE3D8E7D1F6FE84C003D925A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE3D8E7E1F6FE84C003D925A /* 上传视屏 */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D8E7F1F6FE84C003D925A /* Controller */,
+				BE3D8E821F6FE84C003D925A /* Model */,
+				BE3D8E831F6FE84C003D925A /* View */,
+			);
+			path = "上传视屏";
+			sourceTree = "<group>";
+		};
+		BE3D8E7F1F6FE84C003D925A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D8E801F6FE84C003D925A /* EVSUploadVideoViewController.h */,
+				BE3D8E811F6FE84C003D925A /* EVSUploadVideoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE3D8E821F6FE84C003D925A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BE3D8E831F6FE84C003D925A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE3D8E841F6FE84C003D925A /* EVSUploadVideoTableViewCell.h */,
+				BE3D8E851F6FE84C003D925A /* EVSUploadVideoTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -884,11 +1245,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1245DE1F751C0800AAAECA /* UMSocialSDKPromptResources.bundle in Resources */,
+				9D1245DF1F751C0800AAAECA /* UMSocialSDKResources.bundle in Resources */,
 				3C9404611F585396008E523F /* SVProgressHUD.bundle in Resources */,
 				3C2A3F921F5A87AE00CB8557 /* LXShareImage.bundle in Resources */,
 				3C94044D1F571121008E523F /* WMPlayer.bundle in Resources */,
+				3C2A3FAF1F5EE15B00CB8557 /* EVSRecommendVideoCell.xib in Resources */,
+				3CFC4DC21F6B502F00A8B5CC /* EVSForgetPassWordController.xib in Resources */,
+				3CFC4DD31F6C20A200A8B5CC /* EVSUserInfoVideoCell.xib in Resources */,
+				3CFC4DC61F6B502F00A8B5CC /* EVSRegisterNextViewController.xib in Resources */,
+				3CFC4DC81F6B502F00A8B5CC /* EVSRegisterViewController.xib in Resources */,
 				300CAE851F4A854F00BB967E /* LaunchScreen.storyboard in Resources */,
+				3CFC4DE51F6D32CC00A8B5CC /* EVSFansOrAttentionCell.xib in Resources */,
 				300CAE821F4A854F00BB967E /* Assets.xcassets in Resources */,
+				3CFC4DC41F6B502F00A8B5CC /* EVSLoginControllerViewController.xib in Resources */,
 				3C94044B1F571121008E523F /* FastForwardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1054,42 +1424,74 @@
 			files = (
 				3C9404211F52A6A3008E523F /* UIViewController+LX_HUD.m in Sources */,
 				3C9404181F52A66F008E523F /* UIView+LXFrame.m in Sources */,
+				BE3D8E871F6FE84C003D925A /* EVSUploadVideoViewController.m in Sources */,
 				3C94040C1F52A3B7008E523F /* EVSMineHeadView.m in Sources */,
 				3C94044E1F571121008E523F /* WMPlayer.m in Sources */,
+				3CFC4DC11F6B502F00A8B5CC /* EVSForgetPassWordController.m in Sources */,
+				3CFC4DEE1F6EBDD500A8B5CC /* EVSUserVideoListController.m in Sources */,
 				3C49A61C1F4C652F0073CBEA /* EVSMineController.m in Sources */,
 				3C9404621F585396008E523F /* SVProgressHUD.m in Sources */,
+				3CFC4DC31F6B502F00A8B5CC /* EVSLoginControllerViewController.m in Sources */,
+				3CFC4DE01F6D31A400A8B5CC /* EVSFansListController.m in Sources */,
 				3C9404601F585396008E523F /* SVIndefiniteAnimatedView.m in Sources */,
 				300CAED71F4AA5A000BB967E /* EVSNavgationController.m in Sources */,
 				3C9404711F585760008E523F /* LXQiniuUploadManger.m in Sources */,
+				3CFC4DF41F71570500A8B5CC /* EVSHotSearchFooterView.m in Sources */,
 				300CAEDC1F4AA93C00BB967E /* EVSHomeController.m in Sources */,
 				3C2A3F9B1F5A883400CB8557 /* LXShareView.m in Sources */,
+				9D1245961F7519A700AAAECA /* EVServerManger+EVSMine.m in Sources */,
+				3CFC4DCE1F6C1DAA00A8B5CC /* EVSUserInfoViewController.m in Sources */,
+				3CFC4DF71F715E4B00A8B5CC /* EVSHotSearchButton.m in Sources */,
 				3C94040F1F52A56B008E523F /* EVSUserLoginView.m in Sources */,
 				306554551F552E5300427638 /* EVSCommonButton.m in Sources */,
+				3CFC4DC51F6B502F00A8B5CC /* EVSRegisterNextViewController.m in Sources */,
 				3C9404741F5857B9008E523F /* LXUploadTool.m in Sources */,
+				3CFC4DD61F6CBBD100A8B5CC /* EVSUserInfoHeadView.m in Sources */,
+				BE3D8E861F6FE84C003D925A /* EVSMyMessageViewController.m in Sources */,
 				3C2A3F981F5A882200CB8557 /* LXShareItemCell.m in Sources */,
+				3CFC4DCB1F6B503B00A8B5CC /* EVSGetIdentifyCodeButton.m in Sources */,
 				3C94043B1F5302CE008E523F /* YZFlowLayout.m in Sources */,
+				9D1245EF1F753C3700AAAECA /* NSData+LX_Extention.m in Sources */,
 				3C94046D1F58566F008E523F /* LXUnityclass.m in Sources */,
+				3CFC4DD91F6D03FA00A8B5CC /* EVSCustomTwoLineView.m in Sources */,
 				3C2A3FA11F5A8BFC00CB8557 /* UIGestureRecognizer+Extention.m in Sources */,
 				300CAED41F4AA57B00BB967E /* EVSBaseController.m in Sources */,
+				3C2A3FA41F5ECCE000CB8557 /* EVSPlayVideoDetailController.m in Sources */,
+				9D1245F01F753C3700AAAECA /* NSCalendar+LX_Extention.m in Sources */,
 				3C9404381F5302CE008E523F /* UIView+Frame.m in Sources */,
+				3CFC4DF11F71547700A8B5CC /* EVSHotSearchCell.m in Sources */,
+				3CFC4DE41F6D32CC00A8B5CC /* EVSFansOrAttentionCell.m in Sources */,
 				3C94044A1F571121008E523F /* FastForwardView.m in Sources */,
+				3CFC4DD21F6C20A200A8B5CC /* EVSUserInfoVideoCell.m in Sources */,
 				3C9404121F52A582008E523F /* EVSUserAlreadyLoginView.m in Sources */,
+				3C2A3FAA1F5ED71F00CB8557 /* UILabel+Extention.m in Sources */,
 				3065544F1F5522F900427638 /* EVSRefreshFooter.m in Sources */,
+				3CFC4DE81F6D386600A8B5CC /* EVSAttentionListController.m in Sources */,
 				300CAEBC1F4A8EF700BB967E /* AppDelegate.m in Sources */,
 				3C94041B1F52A681008E523F /* UIImage+LX_Extend.m in Sources */,
+				9D077E7A1F70D6BA000A2A6C /* EVServerManger.m in Sources */,
+				9D1245EA1F75254200AAAECA /* NSString+LXExtention.m in Sources */,
+				9D077E7D1F70D72F000A2A6C /* EVServerManger+LoginAndRegister.m in Sources */,
+				BE3D8E881F6FE84C003D925A /* EVSUploadVideoTableViewCell.m in Sources */,
+				3CFC4DC71F6B502F00A8B5CC /* EVSRegisterViewController.m in Sources */,
 				3C94042B1F52A6F5008E523F /* NSSet+HYBUnicodeReadable.m in Sources */,
+				3C2A3FA71F5ED60B00CB8557 /* EVSVideoInfoTitleCell.m in Sources */,
 				3065544C1F5522BF00427638 /* EVSRefreshHeader.m in Sources */,
 				3C9404391F5302CE008E523F /* YZDisplayTitleLabel.m in Sources */,
 				3C9404291F52A6F5008E523F /* NSArray+HYBUnicodeReadable.m in Sources */,
 				3C94046B1F58566F008E523F /* LXNetworkHandler.m in Sources */,
+				9D1245931F75196A00AAAECA /* EVServerManger+EVSHome.m in Sources */,
 				3C94046C1F58566F008E523F /* LXNetworkItem.m in Sources */,
 				300CAE771F4A854F00BB967E /* main.m in Sources */,
+				3CFC4DDD1F6D2ED400A8B5CC /* AppConfig.m in Sources */,
+				3C2A3FAE1F5EE15B00CB8557 /* EVSRecommendVideoCell.m in Sources */,
 				300CAEDF1F4AA9AD00BB967E /* LX_CustomNavBarView.m in Sources */,
 				3C2A3F951F5A880000CB8557 /* LXShareItem.m in Sources */,
 				306554521F552D1400427638 /* EVSHomeVideoCell.m in Sources */,
 				3C9404151F52A62E008E523F /* EVSConst.m in Sources */,
 				3C94043E1F530590008E523F /* EVSBaseListController.m in Sources */,
 				3C9404201F52A6A3008E523F /* MBProgressHUD+LX_Extention.m in Sources */,
+				3CFC4DEB1F6EBA6000A8B5CC /* LX_Actionsheet.m in Sources */,
 				3C94042A1F52A6F5008E523F /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				3C94044C1F571121008E523F /* WMLightView.m in Sources */,
 				3C94043A1F5302CE008E523F /* YZDisplayViewController.m in Sources */,
@@ -1239,11 +1641,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B9ACLWFRGW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/英语短视频/Classes/Main/ThirdLib(第三方库)/UM/UMSocialSDK",
+				);
 				GCC_PREFIX_HEADER = "英语短视频/English_PrefixHeader.pch";
 				INFOPLIST_FILE = "英语短视频/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ishow.learnVedioEnglish.Dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eydsy.videoText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1254,11 +1660,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B9ACLWFRGW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/英语短视频/Classes/Main/ThirdLib(第三方库)/UM/UMSocialSDK",
+				);
 				GCC_PREFIX_HEADER = "英语短视频/English_PrefixHeader.pch";
 				INFOPLIST_FILE = "英语短视频/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ishow.learnVedioEnglish.Dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eydsy.videoText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

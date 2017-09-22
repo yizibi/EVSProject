@@ -12,6 +12,9 @@
 #import "EVSHomeVideoCell.h"
 #import "LXShareView.h"
 #import "LXShareItem.h"
+#import "EVSPlayVideoDetailController.h"
+#import "EVSUserInfoViewController.h"
+
 
 @interface EVSBaseListController ()<UITableViewDelegate,UITableViewDataSource,EVSHomeVideoCellDelegate>
 
@@ -111,6 +114,11 @@
 
 - (void)homeVideoCell:(EVSHomeVideoCell *)videoCell didClickedHeadImg:(UITapGestureRecognizer *)tap indexPath:(NSIndexPath *)indexPath{
     LXLog(@"点击了头像____第%lu行",indexPath.row);
+    
+    EVSUserInfoViewController *userInfoVC = [[EVSUserInfoViewController alloc]init];
+    userInfoVC.userType = userTypeOther;
+    [self.navigationController pushViewController:userInfoVC animated:YES];
+    
 }
 
 #pragma mark - tableViewDelegate
@@ -125,6 +133,11 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    EVSPlayVideoDetailController *playVideoVC = [EVSPlayVideoDetailController playVideoDetailVC];
+    [self.navigationController pushViewController:playVideoVC animated:YES];
+}
 
 
 #pragma mark - lazyUI 

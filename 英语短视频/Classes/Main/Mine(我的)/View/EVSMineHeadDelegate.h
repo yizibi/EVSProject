@@ -33,6 +33,13 @@
  */
 - (void)mineHeadViewDidTouched:(UIView *)headView;
 
+
+/**
+   点击头像
+ */
+- (void)mineHeadViewDidTouchedHeadImgView;
+
+
 @end
 
 #endif /* EVSMineHeadDelegate_h */

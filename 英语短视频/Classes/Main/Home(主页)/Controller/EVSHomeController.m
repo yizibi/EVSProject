@@ -9,6 +9,9 @@
 #import "EVSHomeController.h"
 #import "EVSMineController.h"
 #import "EVSBaseListController.h"
+#import "EVSearchViewController.h"
+#import "EVSNavgationController.h"
+
 
 @interface EVSHomeController ()
 
@@ -96,9 +99,6 @@
     
 }
 
-
-
-
 - (void)setUpNavBar {
     //左边的头像
     UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -129,6 +129,10 @@
 
 - (void)homeControllerRightButtonClick {
     LXLogFunc;
+    EVSearchViewController *searchVC = [[EVSearchViewController alloc] init];
+    EVSNavgationController *searchNavVC = [[EVSNavgationController alloc] initWithRootViewController:searchVC];
+    [self presentViewController:searchNavVC animated:YES completion:nil];
+    
 }
 
 

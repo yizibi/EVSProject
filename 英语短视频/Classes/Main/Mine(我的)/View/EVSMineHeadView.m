@@ -34,22 +34,22 @@
     
     [self addSubview:self.alreadyView];
     
-    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
-       
-        make.left.mas_equalTo(self.mas_left);
-        make.right.mas_equalTo(self.mas_right);
-        make.top.mas_equalTo(self.mas_top).mas_offset(0);
-        make.bottom.mas_equalTo(self.mas_bottom);
-    }];
-    
-    
-    
-//    [self.alreadyView mas_makeConstraints:^(MASConstraintMaker *make) {
+//    [self.loginView mas_makeConstraints:^(MASConstraintMaker *make) {
+//       
 //        make.left.mas_equalTo(self.mas_left);
 //        make.right.mas_equalTo(self.mas_right);
-//        make.top.mas_equalTo(self.mas_top);
+//        make.top.mas_equalTo(self.mas_top).mas_offset(0);
 //        make.bottom.mas_equalTo(self.mas_bottom);
 //    }];
+    
+    
+    
+    [self.alreadyView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.mas_left);
+        make.right.mas_equalTo(self.mas_right);
+        make.top.mas_equalTo(self.mas_top);
+        make.bottom.mas_equalTo(self.mas_bottom);
+    }];
     
     
 }

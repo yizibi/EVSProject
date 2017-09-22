@@ -121,6 +121,13 @@
             [manger.requestSerializer setValue:nowDatw forHTTPHeaderField:@"timestamp"];
             
              */
+
+            [manger.requestSerializer setValue:@"1.0.0" forHTTPHeaderField:@"_v"];
+            [manger.requestSerializer setValue:@"iPhone6s" forHTTPHeaderField:@"imei"];
+            [manger.requestSerializer setValue:@"ios" forHTTPHeaderField:@"clienttype"];
+            
+            //token you bichuan
+//            [manger.requestSerializer setValue:@"" forHTTPHeaderField:@"token"];
             
             [manger GET:URL parameters:self.params progress:^(NSProgress * _Nonnull downloadProgress) {
                 
@@ -236,6 +243,14 @@
             [manger.requestSerializer setValue:appVersion forHTTPHeaderField:@"appVersion"];
             [manger.requestSerializer setValue:nowDatw forHTTPHeaderField:@"timestamp"];
             */
+            
+            [manger.requestSerializer setValue:@"1.0.0" forHTTPHeaderField:@"_v"];
+            [manger.requestSerializer setValue:@"iPhone6s" forHTTPHeaderField:@"imei"];
+            [manger.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"clientType"];
+            
+            //token you bichuan
+            //            [manger.requestSerializer setValue:@"" forHTTPHeaderField:@"token"];
+
             
             [manger POST:URL parameters:self.params progress:^(NSProgress * _Nonnull uploadProgress) {
                 

@@ -15,6 +15,13 @@
 #import "EVSUserAlreadyLoginView.h"
 #import "EVSMineHeadDelegate.h"
 
+#import "EVSLoginControllerViewController.h"
+#import "EVSNavgationController.h"
+
+#import "EVSUserInfoViewController.h"
+
+#import "EVSUploadVideoViewController.h"// 上传视屏
+
 
 static NSString * const mineCellID = @"mineCellID";
 
@@ -78,12 +85,49 @@ static NSString * const mineCellID = @"mineCellID";
 #pragma mark - EVSMineHeadDelegate
 - (void)mineLoginHeadButtonClick:(UIButton *)button{
     LXLogFunc;
+    
+    NSInteger index = button.tag - 1000;
+    switch (index) {
+        case 0:
+        {
+            //手机登录
+            EVSLoginControllerViewController *loginVC = [[EVSLoginControllerViewController alloc] init];
+            EVSNavgationController *loginNav = [[EVSNavgationController alloc] initWithRootViewController:loginVC];
+            [self.navigationController presentViewController:loginNav animated:YES completion:nil];
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
 }
 
 - (void)mineHeadViewDidTouched:(UIView *)headView{
     LXLogFunc;
+    
 }
 
+- (void)mineHeadViewDidTouchedHeadImgView {
+    EVSUserInfoViewController *userInfoVC = [[EVSUserInfoViewController alloc] init];
+    userInfoVC.userType = userTypeSelf;
+    [self.navigationController pushViewController:userInfoVC animated:YES];
+}
 
 #pragma mark - tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -129,7 +173,38 @@ static NSString * const mineCellID = @"mineCellID";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    if (indexPath.section == 0) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                EVSUploadVideoViewController *VC = [[EVSUploadVideoViewController alloc]init];
+                [self.navigationController pushViewController:VC animated:YES];
+            }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+            {
+                
+            }
+                break;
+            case 3:
+            {
+                
+            }
+                break;
+            case 4:
+            {
+                
+            }
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 
